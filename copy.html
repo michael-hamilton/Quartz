@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Examples</title>
+<link rel="stylesheet" type="text/css" href="css/quartz.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1>Copy</h1>
+		
+<!-- 		Headings -->
+		<div class="row">
+			<h2>Headings</h2>
+			
+			<div class="col col-12">
+				<h1>Heading 1 <small>Sub Heading</small></h1>
+				<h2>Heading 2 <small>Sub Heading</small></h2>
+				<h3>Heading 3 <small>Sub Heading</small></h3>
+				<h4>Heading 4 <small>Sub Heading</small></h4>
+				<h5>Heading 5 <small>Sub Heading</small></h5>
+				<h6>Heading 6 <small>Sub Heading</small></h6>
+			</div>
+		</div>
+		
+<!-- 		Semantic Elements -->
+		<div class="row">
+			<h2>Semantic Elements</h2>
+			
+			<div class="col col-12">
+				<p>This text is <em>emphasized</em></p>
+				<p>This text is <strong>strong</strong></p>
+				<p>This is a little bit of <code>code</code></p>
+				<p><del>This text has been deleted</del></p>
+				<p>There's a little bit of <ins>inserted text</ins> here</p>
+				<p>This text has been <mark>highlighted</mark></p>
+				<p>You can have <q>quotations <q>inside</q> of quotations</q></p>
+				<p>This text has been <abbr>abbreviated</abbr></p>
+				<p>This text is <small>small</small></p>
+			</div>
+		</div>
+		
+<!-- 		Horizontal Rule -->
+		<div class="row">
+			<h2>Horizontal Rule</h2>
+			
+			<div class="col col-12">
+				<hr>
+			</div>
+		</div>
+		
+<!-- 		Code -->
+		<div class="row">
+			<h2>Code</h2>
+			
+			<div class="col col-12">
+				<pre class="js">
+					<code>
+						function(){
+							if(1+1==3){
+								console.log("It's magic!");
+							}
+						}
+					</code>
+				</pre>
+			</div>
+		</div>
+		
+<!-- 		Lists -->
+		<div class="row">
+			<h2>Lists</h2>
+			
+			<div class="col col-3">
+				<h3>Unordered List</h3>
+				<ul>
+					<li>Apples
+						<ul>
+							<li>Fuji</li>
+							<li>Golden Delicious</li>
+							<li>Winesap
+								<ul>
+									<li>Stayman</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>Bannans</li>
+					<li>Cranberries</li>
+				</ul>
+			</div>
+			
+			<div class="col col-3">
+				<h3>Ordered List</h3>
+				<ol>
+					<li>Dodge</li>
+					<li>Ford
+						<ol>
+							<li>Focus</li>
+							<li>Mustang
+								<ol>
+									<li>V6</li>
+									<li>GT</li>
+									<li>Shelby</li>
+								</ol>
+							</li>
+							
+							<li>Taurus</li>
+						</ol>
+					</li>
+					<li>GMC</li>
+				</ol>
+			</div>
+			
+			<div class="col col-3">
+				<h3>Unstyled List</h3>
+				<ul class="list-unstyled">
+					<li>Apples
+						<ul class="list-unstyled">
+							<li>Fuji</li>
+							<li>Golden Delicious</li>
+							<li>Winesap
+								<ul class="list-unstyled">
+									<li>Stayman</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>Bannans</li>
+					<li>Cranberries</li>
+				</ul>
+			</div>
+			
+			<div class="col col-3">
+				<h3>Description List</h3>
+				<dl>
+					<dt>Apple</dt>
+					<dd>Red, round</dd>
+					<dt>Bannana</dt>
+					<dd>Yellow, long</dd>
+					<dt>Cranberry</dt>
+					<dd>Dark red, round, small</dd>
+				</dl>
+			</div>
+		</div>
+		
+	</div>
+	
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+
+</html>

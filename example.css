@@ -1,0 +1,12 @@
+.row::before, .row::after {
+	content: " ";
+}
+.row {
+	margin-bottom: 10px;
+}
+.col {
+	background-color: #ccc;
+}
+.col {
+	border: 1px solid #000;
+}

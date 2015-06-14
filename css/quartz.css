@@ -1,0 +1,234 @@
+/* Shadow Variables */
+/* Color Variables */
+/* Utility Colors */
+/* Heading Sizes */
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px; }
+
+/* UTILITY CLASSES */
+.rounded-corners {
+  border-radius: 4px; }
+
+/* /UTILITY CLASSES */
+/* RESPONSIVE COLUMNS */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+.row::before, .row::after {
+  clear: both;
+  content: " ";
+  display: table; }
+
+.row {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.col {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; } }
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%; }
+
+  /* 	Column Widths */
+  .col-1.col {
+    width: 8.333333333%; }
+
+  .col-2.col {
+    width: 16.66666667%; }
+
+  .col-3.col {
+    width: 25%; }
+
+  .col-4.col {
+    width: 33.33333333%; }
+
+  .col-5.col {
+    width: 41.66666667%; }
+
+  .col-6.col {
+    width: 50%; }
+
+  .col-7.col {
+    width: 58.33333333%; }
+
+  .col-8.col {
+    width: 66.66666667%; }
+
+  .col-9.col {
+    width: 75%; }
+
+  .col-10.col {
+    width: 83.33333333%; }
+
+  .col-11.col {
+    width: 91.66666667%; }
+
+  .col-12.col {
+    width: 100%; }
+
+  /* Offsets */
+  .col-offset-1.col {
+    margin-left: 8.333333333%; }
+
+  .col-offset-2.col {
+    margin-left: 16.66666667%; }
+
+  .col-offset-3.col {
+    margin-left: 25%; }
+
+  .col-offset-4.col {
+    margin-left: 33.33333333%; }
+
+  .col-offset-5.col {
+    margin-left: 41.66666667%; }
+
+  .col-offset-6.col {
+    margin-left: 50%; }
+
+  .col-offset-7.col {
+    margin-left: 58.33333333%; }
+
+  .col-offset-8.col {
+    margin-left: 66.66666667%; }
+
+  .col-offset-9.col {
+    margin-left: 75%; }
+
+  .col-offset-10.col {
+    margin-left: 83.33333333%; }
+
+  .col-offset-11.col {
+    margin-left: 91.66666667%; } }
+/* /RESPONSIVE COLUMNS */
+/* BUTTONS */
+.btn {
+  border-width: 1px;
+  border-style: solid;
+  color: #009edb;
+  display: inline-block;
+  line-height: 30px;
+  min-height: 30px;
+  padding: 0 10px; }
+
+.btn.btn-primary, .btn.btn-success, .btn.btn-success, .btn.btn-warn, .btn.btn-error {
+  color: white;
+  text-shadow: 0 1px 1px #7f7f7f; }
+
+.btn.btn-primary {
+  background-color: #44c7f4;
+  border-color: #00adef; }
+
+.btn.btn-success {
+  background-color: #1db78d;
+  border-color: #00a76d; }
+
+.btn.btn-warn {
+  background-color: #ffde4f;
+  border-color: #ffd44f; }
+
+.btn.btn-error {
+  background-color: #f3716c;
+  border-color: #ed473a; }
+
+/* /BUTTONS */
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 400; }
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
+  color: #999; }
+
+h1, .h1 {
+  font-size: 36px; }
+
+h2, .h2 {
+  font-size: 30px; }
+
+h3, .h3 {
+  font-size: 24px; }
+
+h4, .h4 {
+  font-size: 18px; }
+
+h5, .h5 {
+  font-size: 14px; }
+
+h6, .h6 {
+  font-size: 12px; }
+
+/* /HEADINGS */
+/* COPY */
+p {
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+em {
+  color: #ed473a; }
+
+code {
+  background-color: #eee;
+  border-width: 1px;
+  border-color: #e5e5e5;
+  border-style: solid;
+  color: #ed473a;
+  font-family: monospace, serif;
+  padding: 0 5px; }
+
+ins, mark {
+  background-color: #ffff99;
+  text-decoration: none; }
+
+q {
+  font-style: italic; }
+
+abbr {
+  border-bottom-width: 1px;
+  border-bottom-style: dotted; }
+
+small {
+  font-size: 75%; }
+
+hr {
+  border-color: #e5e5e5;
+  border-width: 1px 0 0 0; }
+
+pre {
+  background-color: #fafafa;
+  border-color: #e5e5e5;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  white-space: pre-wrap; }
+
+/* /COPY */
+/* LIST STYLES */
+ul ul, ol ol, ul ol, ol ul, ul li, ol li {
+  margin-left: -6px; }
+
+.list-unstyled {
+  list-style: none; }
+
+dt {
+  font-weight: 500; }
+
+dd {
+  margin-left: 0px; }
+
+/* /LIST STYLES */
+
+/*# sourceMappingURL=quartz.css.map */

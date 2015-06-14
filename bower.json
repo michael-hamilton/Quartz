@@ -1,0 +1,25 @@
+{
+  "name": "Quartz",
+  "version": "0.0.1",
+  "authors": [
+    "Michael Hamilton <michaelhamilton626@gmail.com>"
+  ],
+  "description": "Frontend web framework",
+  "keywords": [
+    "CSS",
+    "Javascript",
+    "Jquery"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/michael-hamilton",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "skeleton": "~2.0.4"
+  }
+}
