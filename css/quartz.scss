@@ -2,23 +2,56 @@
 $text-shadow: 0 1px 1px rgb(127,127,127);
 
 /* Color Variables */
+$default-color: rgb(255, 255, 255);
+$default-accent: rgb(197, 197, 197);
+
 $primary-color: rgb(68, 199, 244);
 $primary-accent: rgb(0, 173, 239);
 
-$success-color: rgb(29, 183, 141);
+$success-color: rgb(109, 192, 103);
 $success-accent: rgb(0, 167, 109);
 
-$warn-color: rgb(255, 222, 79);
-$warn-accent: rgb(255, 212, 79);
+$info-color: rgb(68, 199, 244);
+$info-accent: rgb(0, 173, 239);
+
+$warn-color: rgb(255, 238, 95);
+$warn-accent: rgb(241, 198, 65);
 
 $error-color: rgb(243, 113, 108);
 $error-accent: rgb(237, 71, 58);
 
+$default-hover-color: rgb(226, 226, 226);
+$default-hover-accent: rgb(200, 200, 200);
+
+$primary-hover-color: rgb(0, 158, 219);
+$primary-hover-accent: rgb(13, 132, 177);
+
+$success-hover-color: rgb(77, 160, 71);
+$success-hover-accent: rgb(10, 129, 71);
+
+$warn-hover-color: rgb(255, 212, 0);
+$warn-hover-accent: rgb(224, 181, 48);
+
+$error-hover-color: rgb(228, 98, 93);
+$error-hover-accent: rgb(204, 38, 25);
+
+$primary-color: rgb(68, 199, 244);
+
+$default-text-color: rgb(0, 0, 0);
+$success-text-color: rgb(0, 103, 45);
+$info-text-color: rgb(6, 99, 165);
+$warn-text-color: rgb(161, 118, 0);
+$error-text-color: rgb(189, 23, 10);
+
 /* Utility Colors */
+$button-default-text-color: rgb(0, 0, 0);
 $button-text-color: rgb(255, 255, 255);
 $red: rgb(237, 71, 58);
-$dark-gray: #e5e5e5;
+$black: #000;
+$dark-gray: #c5c5c5;
+$med-gray: #e5e5e5;
 $light-gray: #fafafa;
+$white: #fff;
 
 /* Heading Sizes */
 $h1-size: 36px;
@@ -31,9 +64,21 @@ $h6-size: 12px;
 $subheading-color: #999;
 $highlight-color: rgb(255, 255, 153);
 
+$form-focus-color: rgb(68, 199, 244);
+$form-success-color: rgb(192, 225, 192);
+$form-success-accent: rgb(141, 207, 173);
+$form-error-color: rgb(250, 190, 183);
+$form-error-accent: rgb(247, 161, 154);
 
 
-html {
+* {
+	box-sizing: border-box;
+}
+
+
+html { }
+
+body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 }
@@ -197,10 +242,16 @@ html {
 	border-width: 1px;
 	border-style: solid;
 	color: rgb(0, 158, 219);
+	cursor: pointer;
 	display: inline-block;
+	font-size: 12px;
 	line-height: 30px;
 	min-height:30px;
 	padding: 0 10px;
+}
+
+.btn.btn-default {
+	color: $button-default-text-color;
 }
 
 .btn.btn-primary, .btn.btn-success, .btn.btn-success, .btn.btn-warn, .btn.btn-error {
@@ -208,6 +259,10 @@ html {
 	text-shadow: $text-shadow;
 }
 
+.btn.btn-default {
+	background-color: $default-color;
+	border-color: $default-accent;
+}
 .btn.btn-primary { 
 	background-color: $primary-color;
 	border-color: $primary-accent;
@@ -224,6 +279,28 @@ html {
 	background-color: $error-color;
 	border-color: $error-accent;
 }
+
+.btn.btn-default:hover {
+	background-color: $default-hover-color;
+	border-color: $dark-gray;
+}
+.btn.btn-primary:hover { 
+	background-color: $primary-hover-color;
+	border-color: $primary-hover-accent;
+}
+.btn.btn-success:hover { 
+	background-color: $success-hover-color;
+	border-color: $success-hover-accent;
+}
+.btn.btn-warn:hover { 
+	background-color: $warn-hover-color;
+	border-color: $warn-hover-accent;
+}
+.btn.btn-error:hover { 
+	background-color: $error-hover-color;
+	border-color: $error-hover-accent;
+}
+
 
 /* /BUTTONS */
 
@@ -281,7 +358,7 @@ em {
 code {
 	background-color: #eee;
 	border-width: 1px;
-	border-color: $dark-gray;
+	border-color: $med-gray;
 	border-style: solid;
 	color: $red;
 	font-family: monospace, serif;
@@ -307,13 +384,13 @@ small {
 }
 
 hr {
-	border-color: $dark-gray;
+	border-color: $med-gray;
 	border-width: 1px 0 0 0; 
 }
 
 pre {
 	background-color: $light-gray;
-	border-color: $dark-gray;
+	border-color: $med-gray;
 	border-style: solid;
 	border-width: 1px;
 	padding: 10px;
@@ -343,3 +420,165 @@ dd {
 }
 
 /* /LIST STYLES */
+
+
+
+/* TABLE STYLES */
+
+.table {
+	border-collapse: collapse;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.table.table-small th {
+	padding: 5px !important;
+}
+
+.table.table-small td {
+	padding: 5px !important;
+}
+
+.table tr {
+	
+}
+
+.table th {
+	border-bottom-color: $med-gray;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	font-size: 14px;
+	padding: 10px;
+	text-align: left;
+}
+
+.table td {
+	border-bottom-color: $med-gray;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	padding: 10px;
+}
+
+.table tfoot td {
+	color: $subheading-color;
+	font-style: italic;
+}
+
+.table.table-stripe tbody tr:nth-child(2n-1) {
+	background-color: $light-gray;
+}
+
+.table.table-bordered {
+	border-color: $med-gray;
+	border-style: solid;
+	border-width: 1px;
+}
+
+/* /TABLE STYLES */
+
+
+
+/* FORM STYLES */
+
+input {
+	font-family: inherit;
+}
+
+.form-row {
+	margin-bottom: 15px;
+}
+
+label {
+	display: inline-block;
+	font-weight: 500;
+	margin-bottom: 5px;
+	max-width: 100%;
+}
+
+.form-input {
+	border-color: $dark-gray;
+	border-style: solid;
+	border-width: 1px;
+	font-size: 12px;
+	padding: 7px;
+	width: 100%;
+}
+
+.form-input:focus {
+	border-color: $form-focus-color;
+	box-shadow: 0px 0px 5px -2px #44c7f4;
+}
+
+.form-input[disabled]{
+	cursor: not-allowed;	
+}
+
+.form-input[disabled], .form-input[readonly] {
+	background-color: $light-gray;
+}
+
+.form-input.success {
+	background-color: $form-success-color;
+	border-color: $form-success-accent;
+}
+
+.form-input.error {
+	background-color: $form-error-color;
+	border-color: $form-error-accent;
+}
+
+.checkbox label, .radio label {
+	font-weight: 400;
+}
+
+.checkbox input, .radio input {
+	
+}
+
+/* /FORM STYLES */
+
+
+
+
+/* ALERT STYLES */
+
+.alert { 
+	background-color: #000;
+	border-style: solid;
+	border-width: 1px;
+	margin-bottom: 10px;
+	padding: 15px;
+	width: 100%;
+}
+
+.alert.alert-default {
+	background-color: $default-color;
+	border-color: $default-accent;
+	color: $default-text-color;
+}
+
+.alert.alert-success {
+	background-color: $success-color;
+	border-color: $success-accent;
+	color: $success-text-color;
+}
+
+.alert.alert-info {
+	background-color: $info-color;
+	border-color: $info-accent;
+	color: $info-text-color;
+}
+
+.alert.alert-warn {
+	background-color: $warn-color;
+	border-color: $warn-accent;
+	color: $warn-text-color;
+}
+
+.alert.alert-error {
+	background-color: $error-color;
+	border-color: $error-accent;
+	color: $error-text-color;
+}
+
+/* /ALERT STYLES */
