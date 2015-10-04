@@ -1,6 +1,3 @@
-/* Shadow Variables */
-$text-shadow: 0 1px 1px rgb(127,127,127);
-
 /* Color Variables */
 $default-color: rgb(255, 255, 255);
 $default-accent: rgb(197, 197, 197);
@@ -14,11 +11,11 @@ $success-accent: rgb(0, 167, 109);
 $info-color: rgb(68, 199, 244);
 $info-accent: rgb(0, 173, 239);
 
-$warn-color: rgb(255, 238, 95);
+$warn-color: rgb(255, 218, 23);
 $warn-accent: rgb(241, 198, 65);
 
-$error-color: rgb(243, 113, 108);
-$error-accent: rgb(237, 71, 58);
+$error-color: rgb(243, 73, 78);
+$error-accent: rgb(170, 61, 41);
 
 $default-hover-color: rgb(226, 226, 226);
 $default-hover-accent: rgb(200, 200, 200);
@@ -29,11 +26,11 @@ $primary-hover-accent: rgb(13, 132, 177);
 $success-hover-color: rgb(77, 160, 71);
 $success-hover-accent: rgb(10, 129, 71);
 
-$warn-hover-color: rgb(255, 212, 0);
-$warn-hover-accent: rgb(224, 181, 48);
+$warn-hover-color: rgb(255, 192, 16);
+$warn-hover-accent: rgb(204, 151, 48);
 
-$error-hover-color: rgb(228, 98, 93);
-$error-hover-accent: rgb(204, 38, 25);
+$error-hover-color: rgb(213, 53, 58);
+$error-hover-accent: rgb(145, 41, 13);
 
 $primary-color: rgb(68, 199, 244);
 
@@ -69,6 +66,14 @@ $form-success-color: rgb(192, 225, 192);
 $form-success-accent: rgb(141, 207, 173);
 $form-error-color: rgb(250, 190, 183);
 $form-error-accent: rgb(247, 161, 154);
+
+
+/* Shadow Variables */
+$text-shadow: 0 1px 1px rgb(127,127,127);
+$form-shadow: 0px 0px 5px 0px $form-focus-color;
+$form-success-shadow: 0px 0px 5px 0px $form-success-color;
+$form-error-shadow: 0px 0px 5px 0px $form-error-color;
+
 
 
 * {
@@ -120,6 +125,10 @@ body {
 	width:100%;
 	float:left;
 	box-sizing:border-box;
+	padding-left:8px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 
 /* For devices larger than 400px */
@@ -245,9 +254,18 @@ body {
 	cursor: pointer;
 	display: inline-block;
 	font-size: 12px;
-	line-height: 30px;
+	line-height: 24px;
 	min-height:30px;
-	padding: 0 10px;
+	padding: 4px 12px;
+}
+
+.btn.sm { 
+	line-height: 12px;
+	padding: 8px 4px;
+}
+
+.btn.lg { 
+	padding: 8px 16px;
 }
 
 .btn.btn-default {
@@ -506,7 +524,7 @@ label {
 
 .form-input:focus {
 	border-color: $form-focus-color;
-	box-shadow: 0px 0px 5px -2px #44c7f4;
+	box-shadow: 0px 0px 5px 0px #44c7f4;
 }
 
 .form-input[disabled]{
@@ -525,6 +543,14 @@ label {
 .form-input.error {
 	background-color: $form-error-color;
 	border-color: $form-error-accent;
+}
+
+.form-input.success:focus {
+	box-shadow: 0px 0px 5px 0px $form-success-color;
+}
+
+.form-input.error:focus {
+	box-shadow: 0px 0px 5px 0px $form-error-color;
 }
 
 .checkbox label, .radio label {

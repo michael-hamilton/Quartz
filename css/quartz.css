@@ -1,7 +1,7 @@
-/* Shadow Variables */
 /* Color Variables */
 /* Utility Colors */
 /* Heading Sizes */
+/* Shadow Variables */
 * {
   box-sizing: border-box; }
 
@@ -35,7 +35,11 @@ body {
 .col {
   width: 100%;
   float: left;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding-left: 8px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px; }
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
@@ -126,9 +130,16 @@ body {
   cursor: pointer;
   display: inline-block;
   font-size: 12px;
-  line-height: 30px;
+  line-height: 24px;
   min-height: 30px;
-  padding: 0 10px; }
+  padding: 4px 12px; }
+
+.btn.sm {
+  line-height: 12px;
+  padding: 8px 4px; }
+
+.btn.lg {
+  padding: 8px 16px; }
 
 .btn.btn-default {
   color: black; }
@@ -150,12 +161,12 @@ body {
   border-color: #00a76d; }
 
 .btn.btn-warn {
-  background-color: #ffee5f;
+  background-color: #ffda17;
   border-color: #f1c641; }
 
 .btn.btn-error {
-  background-color: #f3716c;
-  border-color: #ed473a; }
+  background-color: #f3494e;
+  border-color: #aa3d29; }
 
 .btn.btn-default:hover {
   background-color: #e2e2e2;
@@ -170,12 +181,12 @@ body {
   border-color: #0a8147; }
 
 .btn.btn-warn:hover {
-  background-color: #ffd400;
-  border-color: #e0b530; }
+  background-color: #ffc010;
+  border-color: #cc9730; }
 
 .btn.btn-error:hover {
-  background-color: #e4625d;
-  border-color: #cc2619; }
+  background-color: #d5353a;
+  border-color: #91290d; }
 
 /* /BUTTONS */
 /* HEADINGS */
@@ -324,7 +335,7 @@ label {
 
 .form-input:focus {
   border-color: #44c7f4;
-  box-shadow: 0px 0px 5px -2px #44c7f4; }
+  box-shadow: 0px 0px 5px 0px #44c7f4; }
 
 .form-input[disabled] {
   cursor: not-allowed; }
@@ -339,6 +350,12 @@ label {
 .form-input.error {
   background-color: #fabeb7;
   border-color: #f7a19a; }
+
+.form-input.success:focus {
+  box-shadow: 0px 0px 5px 0px #c0e1c0; }
+
+.form-input.error:focus {
+  box-shadow: 0px 0px 5px 0px #fabeb7; }
 
 .checkbox label, .radio label {
   font-weight: 400; }
@@ -369,13 +386,13 @@ label {
   color: #0663a5; }
 
 .alert.alert-warn {
-  background-color: #ffee5f;
+  background-color: #ffda17;
   border-color: #f1c641;
   color: #a17600; }
 
 .alert.alert-error {
-  background-color: #f3716c;
-  border-color: #ed473a;
+  background-color: #f3494e;
+  border-color: #aa3d29;
   color: #bd170a; }
 
 /* /ALERT STYLES */
