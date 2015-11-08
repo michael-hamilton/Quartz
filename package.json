@@ -1,0 +1,28 @@
+{
+  "name": "quartz",
+  "version": "0.0.0",
+  "description": "Boilerplate, responsive front-end development framework ",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michael-hamilton/Quartz.git"
+  },
+  "keywords": [
+    "CSS",
+    "Javascript",
+    "Sass",
+    "Responsive"
+  ],
+  "author": "Michael Hamilton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michael-hamilton/Quartz/issues"
+  },
+  "homepage": "https://github.com/michael-hamilton/Quartz#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}
