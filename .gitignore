@@ -1,3 +1,7 @@
+#System Folders
+.DS_Store
+
 #Hidden Folders
 bower_components
+examples
 node_modules
