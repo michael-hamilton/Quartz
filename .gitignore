@@ -1,5 +1,6 @@
-#System Folders
+#System/Editor Folders
 .DS_Store
+.sass-cache
 
 #Hidden Folders
 bower_components
