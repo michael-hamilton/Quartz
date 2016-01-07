@@ -298,13 +298,7 @@ em {
 }
 
 code {
-	background-color: #eee;
-	border-width: 1px;
-	border-color: $med-gray;
-	border-style: solid;
-	color: $red;
 	font-family: monospace, serif;
-	padding: 0 5px;
 }
 
 ins, mark {
@@ -335,9 +329,13 @@ pre {
 	border-color: $med-gray;
 	border-style: solid;
 	border-width: 1px;
-	padding: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 00px;
+	padding-left: 10px;
 	white-space: pre-wrap;
 }
+
 
 /* /COPY */
 

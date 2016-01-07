@@ -224,7 +224,13 @@ em {
   color: #ed473a; }
 
 code {
-  font-family: monospace, serif; }
+  background-color: #eee;
+  border-width: 1px;
+  border-color: #e5e5e5;
+  border-style: solid;
+  color: #ed473a;
+  font-family: monospace, serif;
+  padding: 0 5px; }
 
 ins, mark {
   background-color: #ffff99;
@@ -245,14 +251,11 @@ hr {
   border-width: 1px 0 0 0; }
 
 pre {
-  background-color: #fafafa;
+  background-color: #000;
   border-color: #e5e5e5;
   border-style: solid;
   border-width: 1px;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 00px;
-  padding-left: 10px;
+  padding: 10px;
   white-space: pre-wrap; }
 
 /* /COPY */
