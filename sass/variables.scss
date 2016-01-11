@@ -1,44 +1,47 @@
+
+
 /* Color Variables */
 $default-color: rgb(255, 255, 255);
-$default-accent: rgb(197, 197, 197);
+$default-accent: darken($default-color, 15%);
 
-$primary-color: rgb(68, 199, 244);
-$primary-accent: rgb(0, 173, 239);
+$primary-color: rgb(29, 109, 242);
+$primary-accent: darken($primary-color, 15%);
 
 $success-color: rgb(109, 192, 103);
-$success-accent: rgb(0, 167, 109);
+$success-accent: darken($success-color, 15%);
 
 $info-color: rgb(68, 199, 244);
-$info-accent: rgb(0, 173, 239);
+$info-accent: darken($info-color, 15%);
 
-$warn-color: rgb(255, 218, 23);
-$warn-accent: rgb(241, 198, 65);
+$warn-color: rgb(249, 222, 59);
+$warn-accent: darken($warn-color, 15%);
 
-$error-color: rgb(243, 73, 78);
-$error-accent: rgb(170, 61, 41);
+$error-color: rgb(217, 83, 79);
+$error-accent: darken($error-color, 15%);
 
-$default-hover-color: rgb(226, 226, 226);
-$default-hover-accent: rgb(200, 200, 200);
+$default-hover-color: darken($default-color, 15%);
+$default-hover-accent: darken($default-color, 30%);
 
-$primary-hover-color: rgb(0, 158, 219);
-$primary-hover-accent: rgb(13, 132, 177);
+$primary-hover-color: darken($primary-color, 15%);
+$primary-hover-accent: darken($primary-color, 30%);
 
-$success-hover-color: rgb(77, 160, 71);
-$success-hover-accent: rgb(10, 129, 71);
+$success-hover-color: darken($success-color, 15%);
+$success-hover-accent: darken($success-color, 30%);
 
-$warn-hover-color: rgb(255, 192, 16);
-$warn-hover-accent: rgb(204, 151, 48);
+$info-hover-color: darken($info-color, 15%);
+$info-hover-accent: darken($info-color, 30%);
 
-$error-hover-color: rgb(213, 53, 58);
-$error-hover-accent: rgb(145, 41, 13);
+$warn-hover-color: darken($warn-color, 15%);
+$warn-hover-accent: darken($warn-color, 30%);
 
-$primary-color: rgb(68, 199, 244);
+$error-hover-color: darken($error-color, 15%);
+$error-hover-accent: darken($error-color, 30%);
 
-$default-text-color: rgb(0, 0, 0);
-$success-text-color: rgb(0, 103, 45);
-$info-text-color: rgb(6, 99, 165);
-$warn-text-color: rgb(161, 118, 0);
-$error-text-color: rgb(189, 23, 10);
+$default-text-color: darken($default-color, 50%);
+$success-text-color: darken($success-color, 30%);
+$info-text-color: darken($info-color, 30%);
+$warn-text-color: darken($warn-color, 30%);
+$error-text-color: darken($error-color, 30%);
 
 /* Utility Colors */
 $button-default-text-color: rgb(0, 0, 0);

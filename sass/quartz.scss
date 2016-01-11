@@ -1,3 +1,10 @@
+/*!
+* Quartz 0.1.0
+* Copyright 2015 Michael Michael
+* MIT Licensed (https://github.com/michael-hamilton/Quartz/blob/master/LICENSE)
+*/
+
+//Import core variables
 @import 'variables';
 
 * {
@@ -196,7 +203,7 @@ body {
 	color: $button-default-text-color;
 }
 
-.btn.btn-primary, .btn.btn-success, .btn.btn-success, .btn.btn-warn, .btn.btn-error {
+.btn.btn-primary, .btn.btn-success, .btn.btn-success, .btn.btn-warn, .btn.btn-error, .btn.btn-info {
 	color: $button-text-color;
 	text-shadow: $text-shadow;
 }
@@ -212,6 +219,10 @@ body {
 .btn.btn-success { 
 	background-color: $success-color;
 	border-color: $success-accent;
+}
+.btn.btn-info { 
+	background-color: $info-color;
+	border-color: $info-accent;
 }
 .btn.btn-warn { 
 	background-color: $warn-color;
@@ -233,6 +244,10 @@ body {
 .btn.btn-success:hover { 
 	background-color: $success-hover-color;
 	border-color: $success-hover-accent;
+}
+.btn.btn-info:hover { 
+	background-color: $info-hover-color;
+	border-color: $info-hover-accent;
 }
 .btn.btn-warn:hover { 
 	background-color: $warn-hover-color;
@@ -506,26 +521,26 @@ label {
 }
 
 .alert.alert-success {
-	background-color: $success-color;
-	border-color: $success-accent;
+	background-color: lighten($success-color, 20%);
+	border-color: lighten($success-accent, 20%);
 	color: $success-text-color;
 }
 
 .alert.alert-info {
-	background-color: $info-color;
-	border-color: $info-accent;
+	background-color: lighten($info-color, 20%);
+	border-color: lighten($info-accent, 20%);
 	color: $info-text-color;
 }
 
 .alert.alert-warn {
-	background-color: $warn-color;
-	border-color: $warn-accent;
+	background-color: lighten($warn-color, 20%);
+	border-color: lighten($warn-accent, 20%);
 	color: $warn-text-color;
 }
 
 .alert.alert-error {
-	background-color: $error-color;
-	border-color: $error-accent;
+	background-color: lighten($error-color, 20%);
+	border-color: lighten($error-accent, 20%);
 	color: $error-text-color;
 }
 
