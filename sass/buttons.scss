@@ -1,0 +1,84 @@
+/* BUTTONS */
+
+.btn { 
+	border-width: 1px;
+	border-style: solid;
+	color: rgb(0, 158, 219);
+	cursor: pointer;
+	display: inline-block;
+	font-size: 12px;
+	line-height: 24px;
+	min-height:30px;
+	padding: 4px 12px;
+}
+
+.btn.sm { 
+	line-height: 12px;
+	padding: 8px 4px;
+}
+
+.btn.lg { 
+	padding: 8px 16px;
+}
+
+.btn.btn-default {
+	color: $button-default-text-color;
+}
+
+.btn.btn-primary, .btn.btn-success, .btn.btn-success, .btn.btn-warn, .btn.btn-error, .btn.btn-info {
+	color: $button-text-color;
+	text-shadow: $text-shadow;
+}
+
+.btn.btn-default {
+	background-color: $default-color;
+	border-color: $default-accent;
+}
+.btn.btn-primary { 
+	background-color: $primary-color;
+	border-color: $primary-accent;
+}
+.btn.btn-success { 
+	background-color: $success-color;
+	border-color: $success-accent;
+}
+.btn.btn-info { 
+	background-color: $info-color;
+	border-color: $info-accent;
+}
+.btn.btn-warn { 
+	background-color: $warn-color;
+	border-color: $warn-accent;
+}
+.btn.btn-error { 
+	background-color: $error-color;
+	border-color: $error-accent;
+}
+
+.btn.btn-default:hover {
+	background-color: $default-hover-color;
+	border-color: $dark-gray;
+}
+.btn.btn-primary:hover { 
+	background-color: $primary-hover-color;
+	border-color: $primary-hover-accent;
+}
+.btn.btn-success:hover { 
+	background-color: $success-hover-color;
+	border-color: $success-hover-accent;
+}
+.btn.btn-info:hover { 
+	background-color: $info-hover-color;
+	border-color: $info-hover-accent;
+}
+.btn.btn-warn:hover { 
+	background-color: $warn-hover-color;
+	border-color: $warn-hover-accent;
+}
+.btn.btn-error:hover { 
+	background-color: $error-hover-color;
+	border-color: $error-hover-accent;
+}
+
+
+/* /BUTTONS */

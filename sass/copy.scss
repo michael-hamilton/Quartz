@@ -1,0 +1,112 @@
+/* HEADINGS */
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-weight: 400;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
+	color: $subheading-color;	
+}
+
+h1, .h1 {
+	font-size: $h1-size;
+}
+
+h2, .h2 {
+	font-size: $h2-size;
+}
+
+h3, .h3 {
+	font-size: $h3-size;
+}
+
+h4, .h4 {
+	font-size: $h4-size;
+}
+
+h5, .h5 {
+	font-size: $h5-size;
+}
+
+h6, .h6 {
+	font-size: $h6-size;
+}
+
+/* /HEADINGS */
+
+
+
+/* COPY */
+
+p {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+em {
+	color: $red;
+}
+
+code {
+	font-family: monospace, serif;
+}
+
+ins, mark {
+	background-color: $highlight-color;
+	text-decoration: none;
+}
+
+q {
+	font-style: italic;
+}
+
+abbr {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+}
+
+small {
+	font-size: 75%;
+}
+
+hr {
+	border-color: $med-gray;
+	border-width: 1px 0 0 0; 
+}
+
+pre {
+	background-color: $light-gray;
+	border-color: $med-gray;
+	border-style: solid;
+	border-width: 1px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 00px;
+	padding-left: 10px;
+	white-space: pre-wrap;
+}
+
+
+/* /COPY */
+
+
+
+/* LIST STYLES */
+
+ul ul, ol ol, ul ol, ol ul, ul li, ol li {
+	margin-left: -6px;
+}
+
+.list-unstyled {
+	list-style: none;
+}
+
+dt {
+	font-weight: 500;
+}
+
+dd {
+	margin-left: 0px;
+}
+
+/* /LIST STYLES */

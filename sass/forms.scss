@@ -1,0 +1,66 @@
+/* FORM STYLES */
+
+input {
+	font-family: inherit;
+}
+
+.form-row {
+	margin-bottom: 15px;
+}
+
+label {
+	display: inline-block;
+	font-weight: 500;
+	margin-bottom: 5px;
+	max-width: 100%;
+}
+
+.form-input {
+	border-color: $dark-gray;
+	border-style: solid;
+	border-width: 1px;
+	font-size: 12px;
+	padding: 7px;
+	width: 100%;
+}
+
+.form-input:focus {
+	border-color: $form-focus-color;
+	box-shadow: 0px 0px 5px 0px #44c7f4;
+}
+
+.form-input[disabled]{
+	cursor: not-allowed;	
+}
+
+.form-input[disabled], .form-input[readonly] {
+	background-color: $light-gray;
+}
+
+.form-input.success {
+	background-color: $form-success-color;
+	border-color: $form-success-accent;
+}
+
+.form-input.error {
+	background-color: $form-error-color;
+	border-color: $form-error-accent;
+}
+
+.form-input.success:focus {
+	box-shadow: 0px 0px 5px 0px $form-success-color;
+}
+
+.form-input.error:focus {
+	box-shadow: 0px 0px 5px 0px $form-error-color;
+}
+
+.checkbox label, .radio label {
+	font-weight: 400;
+}
+
+.checkbox input, .radio input {
+	
+}
+
+/* /FORM STYLES */
