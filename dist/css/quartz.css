@@ -183,8 +183,8 @@ dd {
   width: 100%; }
   .alert.alert-default {
     background-color: white;
-    border-color: white;
-    color: #999999; }
+    border-color: #b3b3b3;
+    color: gray; }
   .alert.alert-success {
     background-color: #b2deaf;
     border-color: #90cf8b;

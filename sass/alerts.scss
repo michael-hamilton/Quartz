@@ -11,8 +11,8 @@
 
 	&.alert-default {
 		background-color: lighten($default-color, 20%);
-		border-color: lighten($default-color, 5%);
-		color: darken($default-color, 40%);
+		border-color: darken($default-color, 30%);
+		color: darken($default-color, 50%);
 	}
 
 	&.alert-success {
