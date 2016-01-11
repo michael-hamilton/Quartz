@@ -1,11 +1,7 @@
-/* FORM STYLES */
+//Form styles
 
 input {
 	font-family: inherit;
-}
-
-.form-row {
-	margin-bottom: 15px;
 }
 
 label {
@@ -15,52 +11,50 @@ label {
 	max-width: 100%;
 }
 
+.form-row {
+	margin-bottom: 15px;
+}
+
 .form-input {
-	border-color: $dark-gray;
+	border-color: $light-gray;
 	border-style: solid;
 	border-width: 1px;
 	font-size: 12px;
 	padding: 7px;
 	width: 100%;
-}
 
-.form-input:focus {
-	border-color: $form-focus-color;
-	box-shadow: 0px 0px 5px 0px #44c7f4;
-}
+	&[disabled]{
+		cursor: not-allowed;	
+	}
 
-.form-input[disabled]{
-	cursor: not-allowed;	
-}
+	&[disabled], &[readonly] {
+		background-color: $lighter-gray;
+	}
 
-.form-input[disabled], .form-input[readonly] {
-	background-color: $light-gray;
-}
+	&:focus {
+		border-color: $form-focus-color;
+		box-shadow: 0px 0px 5px 0px lighten($form-focus-color, 20%);
+	}
 
-.form-input.success {
-	background-color: $form-success-color;
-	border-color: $form-success-accent;
-}
+	&.success {
+		background-color: lighten($success-color, 20%);
+		border-color: lighten($success-color, 5%);
 
-.form-input.error {
-	background-color: $form-error-color;
-	border-color: $form-error-accent;
-}
+		&:focus {
+			box-shadow: 0px 0px 5px 0px lighten($success-color, 20%);
+		}
+	}
 
-.form-input.success:focus {
-	box-shadow: 0px 0px 5px 0px $form-success-color;
-}
+	&.error {
+		background-color: lighten($error-color, 20%);
+		border-color: lighten($error-color, 5%);
 
-.form-input.error:focus {
-	box-shadow: 0px 0px 5px 0px $form-error-color;
+		&:focus {
+			box-shadow: 0px 0px 5px 0px lighten($error-color, 20%);
+		}
+	}
 }
 
 .checkbox label, .radio label {
 	font-weight: 400;
 }
-
-.checkbox input, .radio input {
-	
-}
-
-/* /FORM STYLES */

@@ -1,4 +1,4 @@
-/* BUTTONS */
+//Button styles
 
 .btn { 
 	border-width: 1px;
@@ -10,75 +10,79 @@
 	line-height: 24px;
 	min-height:30px;
 	padding: 4px 12px;
-}
-
-.btn.sm { 
-	line-height: 12px;
-	padding: 8px 4px;
-}
-
-.btn.lg { 
-	padding: 8px 16px;
-}
-
-.btn.btn-default {
-	color: $button-default-text-color;
-}
-
-.btn.btn-primary, .btn.btn-success, .btn.btn-success, .btn.btn-warn, .btn.btn-error, .btn.btn-info {
-	color: $button-text-color;
-	text-shadow: $text-shadow;
-}
-
-.btn.btn-default {
-	background-color: $default-color;
-	border-color: $default-accent;
-}
-.btn.btn-primary { 
-	background-color: $primary-color;
-	border-color: $primary-accent;
-}
-.btn.btn-success { 
-	background-color: $success-color;
-	border-color: $success-accent;
-}
-.btn.btn-info { 
-	background-color: $info-color;
-	border-color: $info-accent;
-}
-.btn.btn-warn { 
-	background-color: $warn-color;
-	border-color: $warn-accent;
-}
-.btn.btn-error { 
-	background-color: $error-color;
-	border-color: $error-accent;
-}
-
-.btn.btn-default:hover {
-	background-color: $default-hover-color;
-	border-color: $dark-gray;
-}
-.btn.btn-primary:hover { 
-	background-color: $primary-hover-color;
-	border-color: $primary-hover-accent;
-}
-.btn.btn-success:hover { 
-	background-color: $success-hover-color;
-	border-color: $success-hover-accent;
-}
-.btn.btn-info:hover { 
-	background-color: $info-hover-color;
-	border-color: $info-hover-accent;
-}
-.btn.btn-warn:hover { 
-	background-color: $warn-hover-color;
-	border-color: $warn-hover-accent;
-}
-.btn.btn-error:hover { 
-	background-color: $error-hover-color;
-	border-color: $error-hover-accent;
-}
 
 
-/* /BUTTONS */
+	&.sm { 
+		line-height: 12px;
+		padding: 8px 4px;
+	}
+
+	&.lg { 
+		padding: 8px 16px;
+	}
+
+	&.btn-primary, &.btn-success, &.btn-success, &.btn-warn, &.btn-error, &.btn-info {
+		color: rgb(255, 255, 255);
+		text-shadow: $text-shadow;
+	}
+
+	&.btn-default {
+		color: rgb(0, 0, 0);
+		border-color: darken($default-color, 20%);
+
+		&:hover {
+			background-color: darken($default-color, 15%);
+			border-color: darken($default-color, 30%);
+		}
+	}
+
+	&.btn-primary { 
+		background-color: $primary-color;
+		border-color: darken($primary-color, 20%);
+
+		&:hover {
+			background-color: darken($primary-color, 15%);
+			border-color: darken($primary-color, 30%);
+		}
+	}
+
+	&.btn-success { 
+		background-color: $success-color;
+		border-color: darken($success-color, 20%);
+
+		&:hover {
+			background-color: darken($success-color, 15%);
+			border-color: darken($success-color, 30%);
+		}
+	}
+
+	&.btn-info { 
+		background-color: $info-color;
+		border-color: darken($info-color, 15%);
+
+		&:hover {
+			background-color: darken($info-color, 15%);
+			border-color: darken($info-color, 30%);
+		}
+	}
+
+	&.btn-warn { 
+		background-color: $warn-color;
+		border-color: darken($warn-color, 20%);
+
+		&:hover {
+			background-color: darken($warn-color, 15%);
+			border-color: darken($warn-color, 30%);
+		}
+	}
+
+	&.btn-error { 
+		background-color: $error-color;
+		border-color: darken($error-color, 20%);
+
+		&:hover {
+			background-color: darken($error-color, 15%);
+			border-color: darken($error-color, 30%);
+		}
+	}
+}

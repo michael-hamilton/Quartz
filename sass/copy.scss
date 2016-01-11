@@ -1,11 +1,11 @@
-/* HEADINGS */
+//Copy styles
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-weight: 400;
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
-	color: $subheading-color;	
+	color: $med-gray;	
 }
 
 h1, .h1 {
@@ -32,19 +32,13 @@ h6, .h6 {
 	font-size: $h6-size;
 }
 
-/* /HEADINGS */
-
-
-
-/* COPY */
-
 p {
 	margin-bottom: 10px;
 	margin-top: 10px;
 }
 
 em {
-	color: $red;
+	color: rgb(237, 71, 58);
 }
 
 code {
@@ -75,8 +69,8 @@ hr {
 }
 
 pre {
-	background-color: $light-gray;
-	border-color: $med-gray;
+	background-color: $lighter-gray;
+	border-color: $light-gray;
 	border-style: solid;
 	border-width: 1px;
 	padding-top: 10px;
@@ -85,13 +79,6 @@ pre {
 	padding-left: 10px;
 	white-space: pre-wrap;
 }
-
-
-/* /COPY */
-
-
-
-/* LIST STYLES */
 
 ul ul, ol ol, ul ol, ol ul, ul li, ol li {
 	margin-left: -6px;
@@ -108,5 +95,3 @@ dt {
 dd {
 	margin-left: 0px;
 }
-
-/* /LIST STYLES */

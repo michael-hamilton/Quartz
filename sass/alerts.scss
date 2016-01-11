@@ -1,4 +1,4 @@
-/* ALERT STYLES */
+//Alert styles
 
 .alert { 
 	background-color: #000;
@@ -7,36 +7,35 @@
 	margin-bottom: 10px;
 	padding: 15px;
 	width: 100%;
-}
 
-.alert.alert-default {
-	background-color: $default-color;
-	border-color: $default-accent;
-	color: $default-text-color;
-}
 
-.alert.alert-success {
-	background-color: lighten($success-color, 20%);
-	border-color: lighten($success-accent, 20%);
-	color: $success-text-color;
-}
+	&.alert-default {
+		background-color: lighten($default-color, 20%);
+		border-color: lighten($default-color, 5%);
+		color: darken($default-color, 40%);
+	}
 
-.alert.alert-info {
-	background-color: lighten($info-color, 20%);
-	border-color: lighten($info-accent, 20%);
-	color: $info-text-color;
-}
+	&.alert-success {
+		background-color: lighten($success-color, 20%);
+		border-color: lighten($success-color, 10%);
+		color: darken($success-color, 20%);
+	}
 
-.alert.alert-warn {
-	background-color: lighten($warn-color, 20%);
-	border-color: lighten($warn-accent, 20%);
-	color: $warn-text-color;
-}
+	&.alert-info {
+		background-color: lighten($info-color, 20%);
+		border-color: lighten($info-color, 10%);
+		color: darken($info-color, 20%);
+	}
 
-.alert.alert-error {
-	background-color: lighten($error-color, 20%);
-	border-color: lighten($error-accent, 20%);
-	color: $error-text-color;
-}
+	&.alert-warn {
+		background-color: lighten($warn-color, 20%);
+		border-color: lighten($warn-color, 10%);
+		color: darken($warn-color, 20%);
+	}
 
-/* /ALERT STYLES */
+	&.alert-error {
+		background-color: lighten($error-color, 20%);
+		border-color: lighten($error-color, 10%);
+		color: darken($error-color, 20%);
+	}
+}
