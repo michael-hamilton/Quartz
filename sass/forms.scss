@@ -16,11 +16,13 @@ label {
 }
 
 .form-input {
+	background-color: #ffffff;
 	border-color: $light-gray;
 	border-style: solid;
 	border-width: 1px;
-	font-size: 12px;
-	padding: 7px;
+	font-size: 13px;
+	height: 28px;
+	padding: 0px 6px;
 	width: 100%;
 
 	&[disabled]{
@@ -37,8 +39,8 @@ label {
 	}
 
 	&.success {
-		background-color: lighten($success-color, 20%);
-		border-color: lighten($success-color, 5%);
+		background-color: lighten($success-color, 30%);
+		border-color: lighten($success-color, 15%);
 
 		&:focus {
 			box-shadow: 0px 0px 5px 0px lighten($success-color, 20%);
@@ -46,8 +48,8 @@ label {
 	}
 
 	&.error {
-		background-color: lighten($error-color, 20%);
-		border-color: lighten($error-color, 5%);
+		background-color: lighten($error-color, 30%);
+		border-color: lighten($error-color, 15%);
 
 		&:focus {
 			box-shadow: 0px 0px 5px 0px lighten($error-color, 20%);
