@@ -72,6 +72,7 @@ You can use any of Quartz's contextual classes to apply meaningful colors to but
 - `.btn-default`
 - `.btn-primary`
 - `.btn-success`
+- `.btn-info`
 - `.btn-warn`
 - `.btn-error`
 
@@ -145,8 +146,8 @@ Alerts are a useful way to display information in a meaningful way.  Alerts work
 To use a contextual color with an alert, apply the class `.alert-c` where `c` is the desired color of the alert.  Options for classes include:
 
 - `.alert-default`
-- `.alert-primary`
 - `.alert-success`
+- `.alert-info`
 - `.alert-warn`
 - `.alert-error`
 
