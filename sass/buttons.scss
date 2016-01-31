@@ -6,7 +6,6 @@
 	color: rgb(0, 158, 219);
 	cursor: pointer;
 	display: inline-block;
-	font-size: 12px;
 	line-height: 28px;
 	min-height: 28px;
 	padding: 4px 14px;
@@ -21,68 +20,33 @@
 		padding: 8px 18px;
 	}
 
-	&.btn-primary, &.btn-success, &.btn-success, &.btn-warn, &.btn-error, &.btn-info {
-		color: rgb(255, 255, 255);
-		text-shadow: $text-shadow;
+	&.disabled,
+	&[disabled] {
+		cursor: not-allowed !important;
+		opacity: 0.6;
 	}
 
 	&.btn-default {
-		color: rgb(0, 0, 0);
-		border-color: darken($default-color, 20%);
-
-		&:hover {
-			background-color: darken($default-color, 15%);
-			border-color: darken($default-color, 30%);
-		}
+		@include make-btn($default-color, $default-color, rgb(0, 0, 0));
 	}
 
 	&.btn-primary { 
-		background-color: $primary-color;
-		border-color: darken($primary-color, 20%);
-
-		&:hover {
-			background-color: darken($primary-color, 15%);
-			border-color: darken($primary-color, 30%);
-		}
+		@include make-btn($primary-color, $primary-color, rgb(255, 255, 255));
 	}
 
 	&.btn-success { 
-		background-color: $success-color;
-		border-color: darken($success-color, 20%);
-
-		&:hover {
-			background-color: darken($success-color, 15%);
-			border-color: darken($success-color, 30%);
-		}
+		@include make-btn($success-color, $success-color, rgb(255, 255, 255));
 	}
 
 	&.btn-info { 
-		background-color: $info-color;
-		border-color: darken($info-color, 15%);
-
-		&:hover {
-			background-color: darken($info-color, 15%);
-			border-color: darken($info-color, 30%);
-		}
+		@include make-btn($info-color, $info-color, rgb(255, 255, 255));
 	}
 
 	&.btn-warn { 
-		background-color: $warn-color;
-		border-color: darken($warn-color, 20%);
-
-		&:hover {
-			background-color: darken($warn-color, 15%);
-			border-color: darken($warn-color, 30%);
-		}
+		@include make-btn($warn-color, $warn-color, rgb(255, 255, 255));
 	}
 
 	&.btn-error { 
-		background-color: $error-color;
-		border-color: darken($error-color, 20%);
-
-		&:hover {
-			background-color: darken($error-color, 15%);
-			border-color: darken($error-color, 30%);
-		}
+		@include make-btn($error-color, $error-color, rgb(255, 255, 255));
 	}
 }

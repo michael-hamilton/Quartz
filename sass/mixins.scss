@@ -1,0 +1,21 @@
+//Allows for easy creation of buttons with default styles
+@mixin make-btn($background-color, $border-color, $text-color) {
+	background-color: $background-color;
+	border-color: darken($border-color, 20%);
+	color: $text-color;
+
+
+	&:hover,
+	&:active {
+		background-color: darken($background-color, 15%);
+		border-color: darken($border-color, 30%);
+	}
+
+	&.disabled,
+	&[disabled] {
+		&:hover {
+			background-color: $background-color;
+			border-color: darken($border-color, 20%);
+		}
+	}
+}
