@@ -138,7 +138,7 @@ This same format will work for `select` elements, `input[type='checkbox']`, and 
 	
 
 ###Alerts
-Alerts are a useful way to display information in a meaningful way.  Alerts work with all Quartz contextual classes to provide visual context to the element.  To use an alert simply add the `.alert` class to an element as follows:
+Alerts are a useful way to display meaningful information.  Alerts work with all Quartz contextual classes to provide visual context to the element.  To use an alert simply add the `.alert` class to an element as follows:
 
 #####Example
 	<div class="alert">Alert</div>
@@ -180,7 +180,7 @@ Quartz includes styling for subheadings by using a `small` element inside of a h
 ###Lists
 Basic list styling is included with Quartz.
 
-####Unordered
+####Unordered Lists
 	<ul>
 	  <li>Apples
 		<ul>
@@ -197,7 +197,7 @@ Basic list styling is included with Quartz.
 	  <li>Cranberries</li>
 	</ul>
 	
-####Ordered
+####Ordered Lists
 	<ol>
 	  <li>Dodge</li>
 	  <li>Ford
@@ -216,7 +216,7 @@ Basic list styling is included with Quartz.
 	  <li>GMC</li>
 	</ol>
 	
-####Unstyled
+####Unstyled Lists
 Unstyled lists requires the class `.list-unstyled` on the `ul` to be unstyled.
 
 	<ul class="list-unstyled">
@@ -235,7 +235,7 @@ Unstyled lists requires the class `.list-unstyled` on the `ul` to be unstyled.
 	  <li>Cranberries</li>
 	</ul>
 	
-####Description
+####Description Lists
 	<dl>
 	  <dt>Apple</dt>
 	  <dd>Red, round</dd>
