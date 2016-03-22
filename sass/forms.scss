@@ -20,12 +20,13 @@ label {
 	border-color: $light-gray;
 	border-style: solid;
 	border-width: 1px;
+	display: block;
 	font-size: 13px;
 	height: 28px;
 	padding: 0px 6px;
 	width: 100%;
 
-	&[disabled]{
+	&[disabled] {
 		cursor: not-allowed;	
 	}
 

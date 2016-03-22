@@ -3,10 +3,10 @@
 // Base colors
 $base-color: #000000;
 $darker-gray: lighten($base-color, 10%);
-$dark-gray: lighten($base-color, 30%);
+$dark-gray: lighten($base-color, 25%);
 $med-gray: lighten($base-color, 50%);
-$light-gray: lighten($base-color, 70%);
-$lighter-gray: lighten($base-color, 90%);
+$light-gray: lighten($base-color, 85%);
+$lighter-gray: lighten($base-color, 95%);
 
 // Contextual colors
 $default-color: rgb(255, 255, 255);

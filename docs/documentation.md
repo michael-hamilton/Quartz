@@ -38,7 +38,7 @@ Components
 ----------
 
 ###Tables
-Quartz provides some basic styles for tables.  To take advantages of table styles, add the `.table` class to any table element.  To properly pickup Quartz's styles, tables should be formatted as follows (using these basic table elements where applicable):
+Quartz provides some basic styles for tables.  These styles directly effect the `<table>` element.  Alternatively, you can apply the `.table` class to any table element to take advantage of the same styles.  To properly pickup Quartz's styles, tables should be formatted as follows (using these basic table elements where applicable):
 
 #####Example
 	<table class="table">
@@ -49,6 +49,7 @@ Quartz provides some basic styles for tables.  To take advantages of table style
 		  <th>Heading 3</th>
 		</tr>
 	  </thead>
+	  
 	  <tbody>
 		<tr>
 	      <td>Body 1</td>
@@ -56,9 +57,17 @@ Quartz provides some basic styles for tables.  To take advantages of table style
 		  <td>Body 3</td>
 		</tr>
 	  </tbody>
+	  
+	  <tfoot>
+		<tr>
+	      <td>Foot 1</td>
+		  <td>Foot 2</td>
+		  <td>Foot 3</td>
+		</tr>
+	  </tfoot>
 	</table>
 	
-Quartz also provides a few other styles for tables. For a striped table, use the `.table-stripe` class.  For a bordered table, use the `.table-bordered` class.  For a condensed table, use the `.table-small` class.  These classes can be used in conjunction with each other.
+Quartz also provides a few other styles for tables. For a striped table, use the `.table-stripe` class.  For a bordered table, use the `.table-bordered` class.  For a condensed table, use the `.table-small` class.  To highlight rows on hover, use `.table-hover`.  These classes can be used in conjunction with each other.
 
 
 ###Buttons

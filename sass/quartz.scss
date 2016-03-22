@@ -1,15 +1,16 @@
 /*!
 * Quartz 0.1.0
-* Copyright 2015 Michael Michael
+* Copyright 2015-2016 Michael Michael
 * MIT Licensed (https://github.com/michael-hamilton/Quartz/blob/master/LICENSE)
 */
 
-//Import core variables & reset
+//Import reset & core variables
+@import 'normalize';
 @import 'variables';
 @import 'mixins';
-@import 'normalize';
 
 //Import core
+@import 'base';
 @import 'copy';
 @import 'grid';
 @import 'utility';
