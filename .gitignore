@@ -7,3 +7,6 @@
 bower_components
 examples
 node_modules
+
+#Other
+*.log
