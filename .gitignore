@@ -2,6 +2,7 @@
 .DS_Store
 .sass-cache
 *.sublime-project
+*.sublime-workspace
 
 #Hidden Folders
 bower_components
