@@ -435,6 +435,49 @@ dt {
 dd {
   margin-left: 0px; }
 
+input {
+  font-family: inherit; }
+
+label {
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  max-width: 100%; }
+
+.form-row {
+  margin-bottom: 15px; }
+
+.form-input {
+  background-color: #ffffff;
+  border-color: #d9d9d9;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  font-size: 13px;
+  height: 28px;
+  padding: 0px 6px;
+  width: 100%; }
+  .form-input[disabled] {
+    cursor: not-allowed; }
+  .form-input[disabled], .form-input[readonly] {
+    background-color: #f2f2f2; }
+  .form-input:focus {
+    border-color: #44c7f4;
+    box-shadow: 0px 0px 5px 0px #a4e4fa; }
+  .form-input.success {
+    background-color: #d5edd3;
+    border-color: #a1d69d; }
+    .form-input.success:focus {
+      box-shadow: 0px 0px 5px 0px #b2deaf; }
+  .form-input.error {
+    background-color: #f4cecd;
+    border-color: #e7908e; }
+    .form-input.error:focus {
+      box-shadow: 0px 0px 5px 0px #eba5a3; }
+
+.checkbox label, .radio label {
+  font-weight: 400; }
+
 .container {
   position: relative;
   width: 100%;
@@ -519,6 +562,42 @@ dd {
       margin-left: 83.33333333%; }
     .col.col-offset-11 {
       margin-left: 91.66666667%; } }
+table, .table {
+  border-collapse: collapse;
+  margin-bottom: 15px;
+  width: 100%; }
+  table th, .table th {
+    border-bottom-color: #d9d9d9;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    font-size: 14px;
+    padding: 10px;
+    text-align: left; }
+  table tr:not(:last-child) td, .table tr:not(:last-child) td {
+    border-bottom-color: #d9d9d9;
+    border-bottom-style: solid;
+    border-bottom-width: 1px; }
+  table td, .table td {
+    padding: 10px; }
+  table tfoot td, .table tfoot td {
+    color: gray;
+    border-top-color: #d9d9d9;
+    border-top-style: solid;
+    border-top-width: 1px;
+    font-style: italic; }
+  table.table-stripe tbody tr:nth-child(2n-1), .table.table-stripe tbody tr:nth-child(2n-1) {
+    background-color: #f2f2f2; }
+  table.table-bordered, .table.table-bordered {
+    border-color: #d9d9d9;
+    border-style: solid;
+    border-width: 1px; }
+  table.table-hover tbody tr:hover, .table.table-hover tbody tr:hover {
+    background-color: #fafafa; }
+  table.table-small th, .table.table-small th {
+    padding: 5px; }
+  table.table-small td, .table.table-small td {
+    padding: 5px; }
+
 .rounded-corners {
   border-radius: 4px; }
 
