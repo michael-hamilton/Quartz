@@ -1,7 +1,7 @@
 // Variables
 
 // Base colors
-$base-color: #000000;
+$base-color: rgb(0, 0, 0);
 $darker-gray: lighten($base-color, 10%);
 $dark-gray: lighten($base-color, 25%);
 $med-gray: lighten($base-color, 50%);
@@ -21,14 +21,14 @@ $form-focus-color: rgb(68, 199, 244);
 $highlight-color: rgb(255, 255, 153);
 
 // Font Sizes
-$base-font-size: 14px;
+$base-font-size: 1.4rem;
 
-$h1-size: floor($base-font-size * 2.57); // 36px
-$h2-size: floor($base-font-size * 2.15); // 30px
-$h3-size: ceil($base-font-size * 1.71); // 24px
-$h4-size: floor($base-font-size * 1.29); // 18px
-$h5-size: $base-font-size * 1.00; // 14px
-$h6-size: ceil($base-font-size * 0.85); // 12px
+$h1-size: $base-font-size * 2.8571; // 4.0rem
+$h2-size: $base-font-size * 2.5714; // 3.6rem
+$h3-size: $base-font-size * 2.1428; // 3.0rem
+$h4-size: $base-font-size * 1.7142; // 2.4rem
+$h5-size: $base-font-size * 1.4285; // 2.0rem
+$h6-size: $base-font-size * 1.2857; // 1.8rem
 
 // Shadow Variables
 $text-shadow: 0 1px 1px $dark-gray;

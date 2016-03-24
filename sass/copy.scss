@@ -2,10 +2,11 @@
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-weight: 400;
+	margin-bottom: 2rem;
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
-	color: $med-gray;	
+	color: $med-gray;
 }
 
 h1, .h1 {
@@ -64,7 +65,7 @@ small {
 }
 
 hr {
-	border-color: $med-gray;
+	border-color: $lighter-gray;
 	border-width: 1px 0 0 0; 
 }
 
@@ -75,7 +76,7 @@ pre {
 	border-width: 1px;
 	padding-top: 10px;
 	padding-right: 10px;
-	padding-bottom: 00px;
+	padding-bottom: 0px;
 	padding-left: 10px;
 	white-space: pre-wrap;
 }

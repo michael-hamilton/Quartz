@@ -1,21 +1,27 @@
+//Allows for easy creation of alerts with default styles
+@mixin make-alert($background-color, $border-color, $text-color) {
+	background-color: $background-color;
+	border-color: $border-color;
+	color: $text-color;
+}
+
 //Allows for easy creation of buttons with default styles
 @mixin make-btn($background-color, $border-color, $text-color) {
 	background-color: $background-color;
-	border-color: darken($border-color, 20%);
+	border-color: $border-color;
 	color: $text-color;
-
 
 	&:hover,
 	&:active {
 		background-color: darken($background-color, 15%);
-		border-color: darken($border-color, 30%);
+		border-color: darken($border-color, 15%);
 	}
 
 	&.disabled,
 	&[disabled] {
 		&:hover {
 			background-color: $background-color;
-			border-color: darken($border-color, 20%);
+			border-color: darken($border-color, 8%);
 		}
 	}
 }

@@ -357,32 +357,37 @@ td,
 th {
   padding: 0; }
 
+html {
+  font-size: 62.5%; }
+
 body {
-  font-family: "Helvetica Neue", Helvetica, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.4rem; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-weight: 400; }
+  font-weight: 400;
+  margin-bottom: 2rem; }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
   color: gray; }
 
 h1, .h1 {
-  font-size: 35px; }
+  font-size: 3.99994rem; }
 
 h2, .h2 {
-  font-size: 30px; }
+  font-size: 3.59996rem; }
 
 h3, .h3 {
-  font-size: 24px; }
+  font-size: 2.99992rem; }
 
 h4, .h4 {
-  font-size: 18px; }
+  font-size: 2.39988rem; }
 
 h5, .h5 {
-  font-size: 14px; }
+  font-size: 1.9999rem; }
 
 h6, .h6 {
-  font-size: 12px; }
+  font-size: 1.79998rem; }
 
 p {
   margin-bottom: 10px;
@@ -409,7 +414,7 @@ small {
   font-size: 75%; }
 
 hr {
-  border-color: gray;
+  border-color: #f2f2f2;
   border-width: 1px 0 0 0; }
 
 pre {
@@ -419,7 +424,7 @@ pre {
   border-width: 1px;
   padding-top: 10px;
   padding-right: 10px;
-  padding-bottom: 00px;
+  padding-bottom: 0px;
   padding-left: 10px;
   white-space: pre-wrap; }
 
@@ -600,5 +605,14 @@ table, .table {
 
 .rounded-corners {
   border-radius: 4px; }
+
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+.clear {
+  clear: both; }
 
 /*# sourceMappingURL=quartz-base.css.map */
