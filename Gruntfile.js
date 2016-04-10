@@ -4,8 +4,7 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
 				files: {
-					'dist/css/quartz-base.css': 'sass/quartz.scss',
-                    'dist/css/quartz.css': 'sass/quartz-full.scss'
+                    'dist/css/quartz.css': 'sass/quartz.scss'
                 }
 			}
 		},
