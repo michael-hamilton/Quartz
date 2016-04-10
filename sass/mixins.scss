@@ -1,21 +1,128 @@
+//Allows for easy creation of alerts with default styles
+@mixin make-alert($background-color, $border-color, $text-color) {
+	background-color: $background-color;
+	border-color: $border-color;
+	color: $text-color;
+}
+
 //Allows for easy creation of buttons with default styles
 @mixin make-btn($background-color, $border-color, $text-color) {
 	background-color: $background-color;
-	border-color: darken($border-color, 20%);
+	border-color: $border-color;
 	color: $text-color;
-
 
 	&:hover,
 	&:active {
 		background-color: darken($background-color, 15%);
-		border-color: darken($border-color, 30%);
+		border-color: darken($border-color, 15%);
 	}
 
 	&.disabled,
 	&[disabled] {
 		&:hover {
 			background-color: $background-color;
-			border-color: darken($border-color, 20%);
+			border-color: darken($border-color, 8%);
 		}
+	}
+}
+
+@mixin make-grid() {
+	/* For phones */
+	.container {
+		width:80%;
+	}
+	
+/* 	Column Widths */
+	&.col-1 {
+		width:8.333333333%;
+	}
+	
+	&.col-2 {
+		width:16.66666667%;
+	}
+	
+	&.col-3 {
+		width:25%;
+	}
+	
+	&.col-4 {
+		width:33.33333333%;
+	}
+	
+	&.col-5 {
+		width:41.66666667%;
+	}
+	
+	&.col-6 {
+		width:50%;
+	}
+	
+	&.col-7 {
+		width:58.33333333%;
+	}
+	
+	&.col-8 {
+		width:66.66666667%;
+	}
+	
+	&.col-9 {
+		width:75%;
+	}
+	
+	&.col-10 {
+		width:83.33333333%;
+	}
+	
+	&.col-11 {
+		width:91.66666667%;
+	}
+	
+	&.col-12 {
+		width:100%;
+	}
+
+	/* Offsets */
+	&.col-offset-1 {
+		margin-left:8.333333333%;
+	}
+	
+	&.col-offset-2 {
+		margin-left:16.66666667%;
+	}
+	
+	&.col-offset-3 {
+		margin-left:25%;
+	}
+	
+	&.col-offset-4 {
+		margin-left:33.33333333%;
+	}
+	
+	&.col-offset-5 {
+		margin-left:41.66666667%;
+	}
+	
+	&.col-offset-6 {
+		margin-left:50%;
+	}
+	
+	&.col-offset-7 {
+		margin-left:58.33333333%;
+	}
+	
+	&.col-offset-8 {
+		margin-left:66.66666667%;
+	}
+	
+	&.col-offset-9 {
+		margin-left:75%;
+	}
+	
+	&.col-offset-10 {
+		margin-left:83.33333333%;
+	}
+	
+	&.col-offset-11 {
+		margin-left:91.66666667%;
 	}
 }

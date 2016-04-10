@@ -8,34 +8,23 @@
 	padding: 15px;
 	width: 100%;
 
-
 	&.alert-default {
-		background-color: lighten($default-color, 20%);
-		border-color: darken($default-color, 30%);
-		color: darken($default-color, 50%);
+		@include make-alert(lighten($default-color, 20%), darken($default-color, 30%), darken($default-color, 50%));
 	}
 
 	&.alert-success {
-		background-color: lighten($success-color, 20%);
-		border-color: lighten($success-color, 10%);
-		color: darken($success-color, 20%);
+		@include make-alert(lighten($success-color, 20%), lighten($success-color, 10%), darken($success-color, 20%));
 	}
 
 	&.alert-info {
-		background-color: lighten($info-color, 20%);
-		border-color: lighten($info-color, 10%);
-		color: darken($info-color, 20%);
+		@include make-alert(lighten($info-color, 20%), darken($info-color, 10%), darken($info-color, 20%));
 	}
 
 	&.alert-warn {
-		background-color: lighten($warn-color, 20%);
-		border-color: lighten($warn-color, 10%);
-		color: darken($warn-color, 20%);
+		@include make-alert(lighten($warn-color, 20%), darken($warn-color, 10%), darken($warn-color, 20%));
 	}
 
 	&.alert-error {
-		background-color: lighten($error-color, 20%);
-		border-color: lighten($error-color, 10%);
-		color: darken($error-color, 20%);
+		@include make-alert(lighten($error-color, 20%), darken($error-color, 10%), darken($error-color, 20%));
 	}
 }

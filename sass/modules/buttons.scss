@@ -8,7 +8,7 @@
 	display: inline-block;
 	line-height: 28px;
 	min-height: 28px;
-	padding: 4px 14px;
+	padding: 4px 18px;
 
 
 	&.sm { 
@@ -27,26 +27,26 @@
 	}
 
 	&.btn-default {
-		@include make-btn($default-color, $default-color, rgb(0, 0, 0));
+		@include make-btn($default-color, darken($default-color, 20%), rgb(0, 0, 0));
 	}
 
 	&.btn-primary { 
-		@include make-btn($primary-color, $primary-color, rgb(255, 255, 255));
+		@include make-btn($primary-color, darken($primary-color, 20%), rgb(255, 255, 255));
 	}
 
 	&.btn-success { 
-		@include make-btn($success-color, $success-color, rgb(255, 255, 255));
+		@include make-btn($success-color, darken($success-color, 20%), rgb(255, 255, 255));
 	}
 
 	&.btn-info { 
-		@include make-btn($info-color, $info-color, rgb(255, 255, 255));
+		@include make-btn($info-color, darken($info-color, 20%), rgb(255, 255, 255));
 	}
 
 	&.btn-warn { 
-		@include make-btn($warn-color, $warn-color, rgb(255, 255, 255));
+		@include make-btn($warn-color, darken($warn-color, 20%), rgb(255, 255, 255));
 	}
 
 	&.btn-error { 
-		@include make-btn($error-color, $error-color, rgb(255, 255, 255));
+		@include make-btn($error-color, darken($error-color, 20%), rgb(255, 255, 255));
 	}
 }
