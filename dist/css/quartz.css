@@ -361,11 +361,11 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Lato', 'Helvetica', sans-serif;
   font-size: 1.4rem; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 2rem; }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
@@ -435,7 +435,7 @@ ul ul, ol ol, ul ol, ol ul, ul li, ol li {
   list-style: none; }
 
 dt {
-  font-weight: 500; }
+  font-weight: 400; }
 
 dd {
   margin-left: 0px; }
@@ -504,68 +504,180 @@ label {
   float: left;
   box-sizing: border-box;
   padding-left: 8px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-top: 10px; }
+  padding-right: 8px;
+  padding-bottom: 5px;
+  padding-top: 5px; }
 
-/* For devices larger than 400px */
-@media (min-width: 400px) {
-  .container {
-    width: 85%;
-    padding: 0; } }
-/* For devices larger than 550px */
+/* For devices smaller than 768px */
+.container {
+  width: 80%; }
+
+.col.small, .col.phone {
+  /* For phones */
+  /* 	Column Widths */
+  /* Offsets */ }
+  .col.small .container, .col.phone .container {
+    width: 80%; }
+  .col.small.col-1, .col.phone.col-1 {
+    width: 8.333333333%; }
+  .col.small.col-2, .col.phone.col-2 {
+    width: 16.66666667%; }
+  .col.small.col-3, .col.phone.col-3 {
+    width: 25%; }
+  .col.small.col-4, .col.phone.col-4 {
+    width: 33.33333333%; }
+  .col.small.col-5, .col.phone.col-5 {
+    width: 41.66666667%; }
+  .col.small.col-6, .col.phone.col-6 {
+    width: 50%; }
+  .col.small.col-7, .col.phone.col-7 {
+    width: 58.33333333%; }
+  .col.small.col-8, .col.phone.col-8 {
+    width: 66.66666667%; }
+  .col.small.col-9, .col.phone.col-9 {
+    width: 75%; }
+  .col.small.col-10, .col.phone.col-10 {
+    width: 83.33333333%; }
+  .col.small.col-11, .col.phone.col-11 {
+    width: 91.66666667%; }
+  .col.small.col-12, .col.phone.col-12 {
+    width: 100%; }
+  .col.small.col-offset-1, .col.phone.col-offset-1 {
+    margin-left: 8.333333333%; }
+  .col.small.col-offset-2, .col.phone.col-offset-2 {
+    margin-left: 16.66666667%; }
+  .col.small.col-offset-3, .col.phone.col-offset-3 {
+    margin-left: 25%; }
+  .col.small.col-offset-4, .col.phone.col-offset-4 {
+    margin-left: 33.33333333%; }
+  .col.small.col-offset-5, .col.phone.col-offset-5 {
+    margin-left: 41.66666667%; }
+  .col.small.col-offset-6, .col.phone.col-offset-6 {
+    margin-left: 50%; }
+  .col.small.col-offset-7, .col.phone.col-offset-7 {
+    margin-left: 58.33333333%; }
+  .col.small.col-offset-8, .col.phone.col-offset-8 {
+    margin-left: 66.66666667%; }
+  .col.small.col-offset-9, .col.phone.col-offset-9 {
+    margin-left: 75%; }
+  .col.small.col-offset-10, .col.phone.col-offset-10 {
+    margin-left: 83.33333333%; }
+  .col.small.col-offset-11, .col.phone.col-offset-11 {
+    margin-left: 91.66666667%; }
+
+/* For devices equal to or larger than 768px */
 @media (min-width: 768px) {
   .container {
     width: 80%; }
 
-  /* 	Column Widths */
-  .col {
+  .col.medium, .col.tablet {
+    /* For phones */
+    /* 	Column Widths */
     /* Offsets */ }
-    .col.col-1 {
+    .col.medium .container, .col.tablet .container {
+      width: 80%; }
+    .col.medium.col-1, .col.tablet.col-1 {
       width: 8.333333333%; }
-    .col.col-2 {
+    .col.medium.col-2, .col.tablet.col-2 {
       width: 16.66666667%; }
-    .col.col-3 {
+    .col.medium.col-3, .col.tablet.col-3 {
       width: 25%; }
-    .col.col-4 {
+    .col.medium.col-4, .col.tablet.col-4 {
       width: 33.33333333%; }
-    .col.col-5 {
+    .col.medium.col-5, .col.tablet.col-5 {
       width: 41.66666667%; }
-    .col.col-6 {
+    .col.medium.col-6, .col.tablet.col-6 {
       width: 50%; }
-    .col.col-7 {
+    .col.medium.col-7, .col.tablet.col-7 {
       width: 58.33333333%; }
-    .col.col-8 {
+    .col.medium.col-8, .col.tablet.col-8 {
       width: 66.66666667%; }
-    .col.col-9 {
+    .col.medium.col-9, .col.tablet.col-9 {
       width: 75%; }
-    .col.col-10 {
+    .col.medium.col-10, .col.tablet.col-10 {
       width: 83.33333333%; }
-    .col.col-11 {
+    .col.medium.col-11, .col.tablet.col-11 {
       width: 91.66666667%; }
-    .col.col-12 {
+    .col.medium.col-12, .col.tablet.col-12 {
       width: 100%; }
-    .col.col-offset-1 {
+    .col.medium.col-offset-1, .col.tablet.col-offset-1 {
       margin-left: 8.333333333%; }
-    .col.col-offset-2 {
+    .col.medium.col-offset-2, .col.tablet.col-offset-2 {
       margin-left: 16.66666667%; }
-    .col.col-offset-3 {
+    .col.medium.col-offset-3, .col.tablet.col-offset-3 {
       margin-left: 25%; }
-    .col.col-offset-4 {
+    .col.medium.col-offset-4, .col.tablet.col-offset-4 {
       margin-left: 33.33333333%; }
-    .col.col-offset-5 {
+    .col.medium.col-offset-5, .col.tablet.col-offset-5 {
       margin-left: 41.66666667%; }
-    .col.col-offset-6 {
+    .col.medium.col-offset-6, .col.tablet.col-offset-6 {
       margin-left: 50%; }
-    .col.col-offset-7 {
+    .col.medium.col-offset-7, .col.tablet.col-offset-7 {
       margin-left: 58.33333333%; }
-    .col.col-offset-8 {
+    .col.medium.col-offset-8, .col.tablet.col-offset-8 {
       margin-left: 66.66666667%; }
-    .col.col-offset-9 {
+    .col.medium.col-offset-9, .col.tablet.col-offset-9 {
       margin-left: 75%; }
-    .col.col-offset-10 {
+    .col.medium.col-offset-10, .col.tablet.col-offset-10 {
       margin-left: 83.33333333%; }
-    .col.col-offset-11 {
+    .col.medium.col-offset-11, .col.tablet.col-offset-11 {
+      margin-left: 91.66666667%; } }
+/* For devices equal to or larger than 992px */
+@media (min-width: 992px) {
+  .container {
+    width: 80%; }
+
+  .col.large, .col.desktop {
+    /* For phones */
+    /* 	Column Widths */
+    /* Offsets */ }
+    .col.large .container, .col.desktop .container {
+      width: 80%; }
+    .col.large.col-1, .col.desktop.col-1 {
+      width: 8.333333333%; }
+    .col.large.col-2, .col.desktop.col-2 {
+      width: 16.66666667%; }
+    .col.large.col-3, .col.desktop.col-3 {
+      width: 25%; }
+    .col.large.col-4, .col.desktop.col-4 {
+      width: 33.33333333%; }
+    .col.large.col-5, .col.desktop.col-5 {
+      width: 41.66666667%; }
+    .col.large.col-6, .col.desktop.col-6 {
+      width: 50%; }
+    .col.large.col-7, .col.desktop.col-7 {
+      width: 58.33333333%; }
+    .col.large.col-8, .col.desktop.col-8 {
+      width: 66.66666667%; }
+    .col.large.col-9, .col.desktop.col-9 {
+      width: 75%; }
+    .col.large.col-10, .col.desktop.col-10 {
+      width: 83.33333333%; }
+    .col.large.col-11, .col.desktop.col-11 {
+      width: 91.66666667%; }
+    .col.large.col-12, .col.desktop.col-12 {
+      width: 100%; }
+    .col.large.col-offset-1, .col.desktop.col-offset-1 {
+      margin-left: 8.333333333%; }
+    .col.large.col-offset-2, .col.desktop.col-offset-2 {
+      margin-left: 16.66666667%; }
+    .col.large.col-offset-3, .col.desktop.col-offset-3 {
+      margin-left: 25%; }
+    .col.large.col-offset-4, .col.desktop.col-offset-4 {
+      margin-left: 33.33333333%; }
+    .col.large.col-offset-5, .col.desktop.col-offset-5 {
+      margin-left: 41.66666667%; }
+    .col.large.col-offset-6, .col.desktop.col-offset-6 {
+      margin-left: 50%; }
+    .col.large.col-offset-7, .col.desktop.col-offset-7 {
+      margin-left: 58.33333333%; }
+    .col.large.col-offset-8, .col.desktop.col-offset-8 {
+      margin-left: 66.66666667%; }
+    .col.large.col-offset-9, .col.desktop.col-offset-9 {
+      margin-left: 75%; }
+    .col.large.col-offset-10, .col.desktop.col-offset-10 {
+      margin-left: 83.33333333%; }
+    .col.large.col-offset-11, .col.desktop.col-offset-11 {
       margin-left: 91.66666667%; } }
 table, .table {
   border-collapse: collapse;
