@@ -1,4 +1,4 @@
-Quartz 0.1.0 Documentation
+Quartz 0.3.0 Documentation
 ==========================
 
 Quartz is a basic, responsive frontend web framework that aims to provide a set of useful features and components while still remaining small in size.  Quartz is released under the [MIT License](https://github.com/michael-hamilton/Quartz/blob/master/LICENSE) and is free to use and modify however you wish.
@@ -10,28 +10,46 @@ Grid System
 -----------
 Quartz includes a grid system that is comprised of "columns" that help when creating responsive layouts.
 
-A single row can contain up to 12 columns, or a mixture of different sized columns, so long as the sum of their sizes is less than or equal to 12.
+A single row can contain up to 12 columns, including a mixture of different sized columns, so long as the sum of their sizes is less than or equal to 12.
 
-Columns must exist inside of a `.container` element.  To create a column, apply the class `.col` to an element, along with the class `.col-n` where `n` is the size of the column to be created.
+Columns must exist inside of a `.container` element.  To create a column, apply the class `.col` to an element, along with a column size class and a breakpoint size class.   Columns can be from 1 to 12 columns wide.  Use the class `.col-*` where `*` is the size of the column to be created.  Breakpoint size classes are either `.large`, `.medium`, or `.small`.  They are explained further below.
 
 #####Example
 	<div class="container">
-      <div class="col col-6">
+      <div class="col medium col-6">
       </div>
     </div>
-   
-Columns are responsive and will stack when the width of the window is `550px`.  
-Columns can be nested as well.
+    
+###Breakpoints & Synonyms
+Columns are responsive elements that are useful for laying out content differently on different devices.  There are 3 different types of columns that are set to stack at certain breakpoints.  Columns should not be combined
+
+`.large` will cause columns to only display when the window width is `992px` or larger.  The `.desktop` class can be used as a synonym in place of `.large`.
+
+`.medium` will cause columns to only display when the window width is `768px` or larger.  The `.tablet` class can be used as a synonym in place of `.medium`.
+
+`.small` will cause columns to only display when the window width is smaller than `768px`.  The `.phone` class can be used as a synonym in place of `.small`.
+
+###Nesting
+Columns can be nested within each other as well.
 
 #####Example
 	<div class="container">
-      <div class="col col-6">
-        <div class="col col-6">
+      <div class="col medium col-6">
+        <div class="col medium col-6">
        	</div>
       </div>
     </div>
-__________
+    
+###Offsetting
+Columns can be offset by applying the `.offset-*` class where `*` is the number of columns (from 1 to 11) to offset.
 
+#####Example
+	<div class="container">
+      <div class="col medium offset-1">
+      </div>
+    </div>
+__________
+    
 
 
 Components
@@ -76,7 +94,7 @@ To use a Quartz button, add the `.btn` class to an element.
 #####Example
 	<button class="btn"></button>
 	
-You can use any of Quartz's contextual classes to apply meaningful colors to buttons.  To use a color class, apply the class `.btn-c` where `c` is the desired color of the button.  Options for classes include:
+You can use any of Quartz's contextual classes to apply meaningful colors to buttons.  To use a color class, apply the class `.btn-*` where `*` is the desired color of the button.  Options for classes include:
 
 - `.btn-default`
 - `.btn-primary`
@@ -163,6 +181,7 @@ To use a contextual color with an alert, apply the class `.alert-c` where `c` is
 #####Example
 	<div class="alert alert-default">This is a default alert</button>
 	
+____
 
 
 Copy
