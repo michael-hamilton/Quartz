@@ -738,21 +738,25 @@ table, .table {
     background-color: white;
     border-color: #b3b3b3;
     color: gray; }
+  .alert.alert-primary {
+    background-color: #6eb1f8;
+    border-color: #0a6dd8;
+    color: #074b93; }
   .alert.alert-success {
     background-color: #b2deaf;
-    border-color: #90cf8b;
+    border-color: #58b751;
     color: #3e8839; }
   .alert.alert-info {
     background-color: #a4e4fa;
-    border-color: #14b9f1;
+    border-color: #27bef2;
     color: #0c97c6; }
   .alert.alert-warn {
-    background-color: #fcef9e;
-    border-color: #f7d60a;
-    color: #c8ac06; }
+    background-color: #fdec81;
+    border-color: #ebcb04;
+    color: #af9703; }
   .alert.alert-error {
     background-color: #eba5a3;
-    border-color: #c9302c;
+    border-color: #d43a36;
     color: #a02622; }
 
 .btn {
@@ -774,63 +778,63 @@ table, .table {
     opacity: 0.6; }
   .btn.btn-default {
     background-color: white;
-    border-color: #cccccc;
+    border-color: #d9d9d9;
     color: black; }
     .btn.btn-default:hover, .btn.btn-default:active {
       background-color: #d9d9d9;
-      border-color: #a6a6a6; }
+      border-color: #bfbfbf; }
     .btn.btn-default.disabled:hover, .btn.btn-default[disabled]:hover {
       background-color: white;
-      border-color: #b8b8b8; }
+      border-color: #c4c4c4; }
   .btn.btn-primary {
-    background-color: #1d6df2;
-    border-color: #0942a0;
+    background-color: #1681f4;
+    border-color: #0a70dd;
     color: white; }
     .btn.btn-primary:hover, .btn.btn-primary:active {
-      background-color: #0b4cb8;
-      border-color: #052457; }
+      background-color: #085cb5;
+      border-color: #0857ac; }
     .btn.btn-primary.disabled:hover, .btn.btn-primary[disabled]:hover {
-      background-color: #1d6df2;
-      border-color: #073279; }
+      background-color: #1681f4;
+      border-color: #085cb5; }
   .btn.btn-success {
-    background-color: #6dc067;
-    border-color: #3e8839;
+    background-color: #7bc675;
+    border-color: #5cb955;
     color: white; }
     .btn.btn-success:hover, .btn.btn-success:active {
-      background-color: #469a40;
-      border-color: #255222; }
+      background-color: #4da946;
+      border-color: #469a40; }
     .btn.btn-success.disabled:hover, .btn.btn-success[disabled]:hover {
-      background-color: #6dc067;
-      border-color: #316c2d; }
+      background-color: #7bc675;
+      border-color: #49a243; }
   .btn.btn-info {
-    background-color: #44c7f4;
-    border-color: #0c97c6;
+    background-color: #74d5f7;
+    border-color: #2cc0f3;
     color: white; }
     .btn.btn-info:hover, .btn.btn-info:active {
-      background-color: #0da9de;
-      border-color: #07607e; }
+      background-color: #2cc0f3;
+      border-color: #0da9de; }
     .btn.btn-info.disabled:hover, .btn.btn-info[disabled]:hover {
-      background-color: #44c7f4;
-      border-color: #0979a0; }
+      background-color: #74d5f7;
+      border-color: #0eb0e8; }
   .btn.btn-warn {
-    background-color: #f9de3b;
-    border-color: #c8ac06;
+    background-color: #fce140;
+    border-color: #fbda13;
     color: white; }
     .btn.btn-warn:hover, .btn.btn-warn:active {
-      background-color: #e1c207;
-      border-color: #7e6c04; }
+      background-color: #ebcb04;
+      border-color: #d7ba04; }
     .btn.btn-warn.disabled:hover, .btn.btn-warn[disabled]:hover {
-      background-color: #f9de3b;
-      border-color: #a08a05; }
+      background-color: #fce140;
+      border-color: #e1c204; }
   .btn.btn-error {
-    background-color: #d9534f;
-    border-color: #a02622;
+    background-color: #e27c79;
+    border-color: #d43f3a;
     color: white; }
     .btn.btn-error:hover, .btn.btn-error:active {
-      background-color: #b52b27;
-      border-color: #611715; }
+      background-color: #d43f3a;
+      border-color: #b52b27; }
     .btn.btn-error.disabled:hover, .btn.btn-error[disabled]:hover {
-      background-color: #d9534f;
-      border-color: #7e1e1b; }
+      background-color: #e27c79;
+      border-color: #bd2d29; }
 
 /*# sourceMappingURL=quartz.css.map */

@@ -14,7 +14,7 @@
 	&:hover,
 	&:active {
 		background-color: darken($background-color, 15%);
-		border-color: darken($border-color, 15%);
+		border-color: darken($border-color, 10%);
 	}
 
 	&.disabled,

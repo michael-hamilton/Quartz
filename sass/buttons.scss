@@ -27,26 +27,26 @@
 	}
 
 	&.btn-default {
-		@include make-btn($default-color, darken($default-color, 20%), rgb(0, 0, 0));
+		@include make-btn(lighten($default-color, 10%), darken($default-color, 15%), rgb(0, 0, 0));
 	}
 
 	&.btn-primary { 
-		@include make-btn($primary-color, darken($primary-color, 20%), rgb(255, 255, 255));
+		@include make-btn(lighten($primary-color, 2%), darken($primary-color, 5%), rgb(255, 255, 255));
 	}
 
 	&.btn-success { 
-		@include make-btn($success-color, darken($success-color, 20%), rgb(255, 255, 255));
+		@include make-btn(lighten($success-color, 4%), darken($success-color, 5%), rgb(255, 255, 255));
 	}
 
 	&.btn-info { 
-		@include make-btn($info-color, darken($info-color, 20%), rgb(255, 255, 255));
+		@include make-btn(lighten($info-color, 10%), darken($info-color, 5%), rgb(255, 255, 255));
 	}
 
 	&.btn-warn { 
-		@include make-btn($warn-color, darken($warn-color, 20%), rgb(255, 255, 255));
+		@include make-btn(lighten($warn-color, 7%), darken($warn-color, 2%), rgb(255, 255, 255));
 	}
 
 	&.btn-error { 
-		@include make-btn($error-color, darken($error-color, 20%), rgb(255, 255, 255));
+		@include make-btn(lighten($error-color, 10%), darken($error-color, 5%), rgb(255, 255, 255));
 	}
 }
