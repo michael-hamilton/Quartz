@@ -9,26 +9,26 @@
 	width: 100%;
 
 	&.alert-default {
-		@include make-alert(lighten($default-color, 20%), darken($default-color, 30%), darken($default-color, 50%));
+		@include make-alert(lighten($default-color, 10%), darken($default-color, 20%), darken($default-color, 50%));
 	}
 
 	&.alert-primary {
-		@include make-alert(lighten($primary-color, 20%), darken($primary-color, 6%), darken($primary-color, 20%));
+		@include make-alert(lighten($primary-color, 6%), darken($primary-color, 10%), darken($primary-color, 35%));
 	}
 
 	&.alert-success {
-		@include make-alert(lighten($success-color, 20%), darken($success-color, 6%), darken($success-color, 20%));
+		@include make-alert(lighten($success-color, 6%), darken($success-color, 10%), darken($success-color, 35%));
 	}
 
 	&.alert-info {
-		@include make-alert(lighten($info-color, 20%), darken($info-color, 6%), darken($info-color, 20%));
+		@include make-alert(lighten($info-color, 6%), darken($info-color, 10%), darken($info-color, 35%));
 	}
 
 	&.alert-warn {
-		@include make-alert(lighten($warn-color, 20%), darken($warn-color, 8%), darken($warn-color, 20%));
+		@include make-alert(lighten($warn-color, 6%), darken($warn-color, 10%), darken($warn-color, 35%));
 	}
 
 	&.alert-error {
-		@include make-alert(lighten($error-color, 20%), darken($error-color, 6%), darken($error-color, 20%));
+		@include make-alert(lighten($error-color, 6%), darken($error-color, 10%), darken($error-color, 35%));
 	}
 }
