@@ -1,12 +1,12 @@
 //Grid styles
 
 .container {
-	position:relative;
-	width:100%;
+	box-sizing:border-box;
 	max-width:960px;
 	margin:0 auto;
 	padding:0 20px;
-	box-sizing:border-box;
+	position:relative;
+	width:80%;
 }
 
 .row {
@@ -30,11 +30,7 @@
 	padding-top: 5px;
 }
 
-/* For devices smaller than 768px */
-.container {
-	width:80%;
-}
-	
+/* For devices smaller than 768px */	
 .col.small, .col.phone {
 	@include make-grid();
 }

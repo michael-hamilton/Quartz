@@ -357,6 +357,11 @@ td,
 th {
   padding: 0; }
 
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
 html {
   font-size: 62.5%; }
 
@@ -429,6 +434,7 @@ pre {
   white-space: pre-wrap; }
 
 ul ul, ol ol, ul ol, ol ul, ul li, ol li {
+  font-weight: 300;
   margin-left: -6px; }
 
 .list-unstyled {
@@ -438,6 +444,7 @@ dt {
   font-weight: 400; }
 
 dd {
+  font-weight: 300;
   margin-left: 0px; }
 
 input {
@@ -459,8 +466,8 @@ label {
   border-width: 1px;
   display: block;
   font-size: 13px;
-  height: 28px;
-  padding: 0px 6px;
+  height: 32px;
+  padding: 2px 6px;
   width: 100%; }
   .form-input[disabled] {
     cursor: not-allowed; }
@@ -484,12 +491,12 @@ label {
   font-weight: 400; }
 
 .container {
-  position: relative;
-  width: 100%;
+  box-sizing: border-box;
   max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box; }
+  position: relative;
+  width: 80%; }
 
 .row {
   margin-left: 10px;
@@ -509,9 +516,6 @@ label {
   padding-top: 5px; }
 
 /* For devices smaller than 768px */
-.container {
-  width: 80%; }
-
 .col.small, .col.phone {
   /* For phones */
   /* 	Column Widths */
