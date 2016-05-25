@@ -21,7 +21,7 @@ Columns must exist inside of a `.container` element.  To create a column, apply 
     </div>
     
 ###Breakpoints & Synonyms
-Columns are responsive elements that are useful for laying out content differently on different devices.  There are 3 different types of columns that are set to stack at certain breakpoints.  Columns should not be combined
+Columns are responsive elements that are useful for laying out content differently on different devices.  There are 3 different types of columns that are set to stack at certain breakpoints.
 
 `.large` will cause columns to only display when the window width is `992px` or larger.  The `.desktop` class can be used as a synonym in place of `.large`.
 
@@ -170,7 +170,7 @@ Alerts are a useful way to display meaningful information.  Alerts work with all
 #####Example
 	<div class="alert">Alert</div>
 
-To use a contextual color with an alert, apply the class `.alert-c` where `c` is the desired color of the alert.  Options for classes include:
+To use a contextual color with an alert, apply the class `.alert-*` where `*` is the desired color of the alert.  Options for classes include:
 
 - `.alert-default`
 - `.alert-success`
@@ -319,9 +319,25 @@ You can render preformatted text, such as code, using the `pre` tag
 	<pre>
 	  <code>
   	    function() {
-	      if(1+1==3) {
+	      if(1+1===3) {
             console.log("It's magic!");
           }
         }
       </code>
     </pre>
+
+____
+
+
+Utility Classes
+---------------
+
+Quartz has some utility classes that can be applied to various elements to assist with basic customization.
+
+###Alignment
+Elements can be aligned left, center or right by applying the `.align-left`, `.align-center` or `.align-right` classes respectively.
+
+Text can also be aligned left, center or right by applying the `.text-left`, `.text-center` or `.text-right` classes respectively.
+
+###Rounded corners
+Most quartz components come with rounded corners.  If you would prefer to remove the rounded corners, you can apply the `.no-rounded-corners` class to your element.  Conversely, you can apply the `.rounded-corners` class to an element to give it rounded corners.  Buttons and alerts are great examples of components where these classes would be useful.

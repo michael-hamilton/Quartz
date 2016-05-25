@@ -9,6 +9,7 @@
 @mixin make-btn($background-color, $border-color, $text-color) {
 	background-color: $background-color;
 	border-color: $border-color;
+	border-radius: 5px;
 	color: $text-color;
 
 	&:hover,

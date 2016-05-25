@@ -1,17 +1,41 @@
 //Utility styles
 
 .rounded-corners {
-	border-radius: 4px;
+	border-radius: 5px;
 }
 
-.pull-left {
+.no-rounded-corners {
+	border-radius: 0px !important;
+}
+
+
+//Element alignment
+.align-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.align-left {
 	float: left;
 }
 
-.pull-right {
+.align-right {
 	float: right;
 }
 
 .clear {
 	clear: both;
+}
+
+//Text alignment
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
 }

@@ -732,19 +732,36 @@ table, .table {
     padding: 5px; }
 
 .rounded-corners {
-  border-radius: 4px; }
+  border-radius: 5px; }
 
-.pull-left {
+.no-rounded-corners {
+  border-radius: 0px !important; }
+
+.align-center {
+  margin-left: auto;
+  margin-right: auto; }
+
+.align-left {
   float: left; }
 
-.pull-right {
+.align-right {
   float: right; }
 
 .clear {
   clear: both; }
 
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
 .alert {
   background-color: #000;
+  border-radius: 5px;
   border-style: solid;
   border-width: 1px;
   margin-bottom: 10px;
@@ -776,8 +793,9 @@ table, .table {
     color: #9f0002; }
 
 .btn {
-  border-width: 1px;
+  border-radius: 5px;
   border-style: solid;
+  border-width: 1px;
   color: #009edb;
   cursor: pointer;
   display: inline-block;
@@ -795,6 +813,7 @@ table, .table {
   .btn.btn-default {
     background-color: white;
     border-color: #cccccc;
+    border-radius: 5px;
     color: black; }
     .btn.btn-default:hover, .btn.btn-default:active {
       background-color: #e6e6e6;
@@ -805,6 +824,7 @@ table, .table {
   .btn.btn-primary {
     background-color: #9f51b0;
     border-color: #80408e;
+    border-radius: 5px;
     color: white; }
     .btn.btn-primary:hover, .btn.btn-primary:active {
       background-color: #80408e;
@@ -815,6 +835,7 @@ table, .table {
   .btn.btn-success {
     background-color: #8cd19d;
     border-color: #68c27e;
+    border-radius: 5px;
     color: white; }
     .btn.btn-success:hover, .btn.btn-success:active {
       background-color: #68c27e;
@@ -825,6 +846,7 @@ table, .table {
   .btn.btn-info {
     background-color: #5cacc4;
     border-color: #3f94ae;
+    border-radius: 5px;
     color: white; }
     .btn.btn-info:hover, .btn.btn-info:active {
       background-color: #3f94ae;
@@ -835,6 +857,7 @@ table, .table {
   .btn.btn-warn {
     background-color: #fcb653;
     border-color: #fba121;
+    border-radius: 5px;
     color: white; }
     .btn.btn-warn:hover, .btn.btn-warn:active {
       background-color: #fba121;
@@ -845,6 +868,7 @@ table, .table {
   .btn.btn-error {
     background-color: #ff5254;
     border-color: #ff1f22;
+    border-radius: 5px;
     color: white; }
     .btn.btn-error:hover, .btn.btn-error:active {
       background-color: #ff1f22;
