@@ -1,4 +1,4 @@
-Quartz 0.3.0 Documentation
+Quartz 0.4.0 Documentation
 ==========================
 
 Quartz is a basic, responsive frontend web framework that aims to provide a set of useful features and components while still remaining small in size.  Quartz is released under the [MIT License](https://github.com/michael-hamilton/Quartz/blob/master/LICENSE) and is free to use and modify however you wish.
