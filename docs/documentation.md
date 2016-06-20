@@ -21,7 +21,7 @@ Columns must exist inside of a `.container` element.  To create a column, apply 
     </div>
     
 ###Breakpoints & Synonyms
-Columns are responsive elements that are useful for laying out content differently on different devices.  There are 3 different types of columns that are set to stack at certain breakpoints.
+Columns are responsive elements that are useful for laying out content differently on various devices.  There are 3 different types of columns that are set to stack at certain breakpoints.
 
 `.large` will cause columns to only display when the window width is `992px` or larger.  The `.desktop` class can be used as a synonym in place of `.large`.
 
@@ -110,7 +110,7 @@ Quartz also provides a few other styles for buttons.  For rounded buttons, use t
 
 
 ###Forms
-Quartz provides useful styles for most form elements including `input`, `textarea`, `select`, and `label`.  There are several ways that form styles could be take advantage of.  The most common way to pickup form styles is to wrap each form element and it's corresponding label in an element with the class `.form-row` as follows:
+Quartz provides useful styles for most form elements including `input`, `textarea`, `select`, and `label`.  The easiest way to pickup Quartz's form styles is to wrap each form element and it's corresponding label in a `div` with the class `.form-row` as follows:
 
 #####Example
 	<div class="form-row">
@@ -165,7 +165,7 @@ This same format will work for `select` elements, `input[type='checkbox']`, and 
 	
 
 ###Alerts
-Alerts are a useful way to display meaningful information.  Alerts work with all Quartz contextual classes to provide visual context to the element.  To use an alert simply add the `.alert` class to an element as follows:
+Alerts are a useful way to display meaningful information.  Alerts work with all Quartz contextual classes to provide visual context to the element.  To use an alert, simply add the `.alert` class to an element as follows:
 
 #####Example
 	<div class="alert">Alert</div>
@@ -187,7 +187,7 @@ ____
 Copy
 ----
 
-Quartz provides many global styles that are automatically applied without the need for classes.  Elements used for copy all pickup Quartz's styling without the need for additional classes.
+Quartz provides many global styles that are automatically applied, without the need for classes.  Elements used for copy all pickup Quartz's styling without the need for additional classes.
 
 ###Headings
 Headings elements are styled by default. Simply use the standard HTML heading elements `h1`, `h2`, `h3`, `h4`, `h5`, `h6`.
