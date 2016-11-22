@@ -15,8 +15,10 @@
 @import 'forms';
 @import 'grid';
 @import 'tables';
-@import 'utility';
 
 //Import components
 @import 'alerts';
 @import 'buttons';
+
+//Import utility last since this includes properties that might override properties set elsewhere
+@import 'utility';
