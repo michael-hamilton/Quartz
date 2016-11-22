@@ -1,4 +1,4 @@
-Quartz 0.4.0 Documentation
+Quartz 0.5.0 Documentation
 ==========================
 
 Quartz is a basic, responsive frontend web framework that aims to provide a set of useful features and components while still remaining small in size.  Quartz is released under the [MIT License](https://github.com/michael-hamilton/Quartz/blob/master/LICENSE) and is free to use and modify however you wish.
@@ -12,7 +12,8 @@ Quartz includes a grid system that is comprised of "columns" that help when crea
 
 A single row can contain up to 12 columns, including a mixture of different sized columns, so long as the sum of their sizes is less than or equal to 12.
 
-Columns must exist inside of a `.container` element.  To create a column, apply the class `.col` to an element, along with a column size class and a breakpoint size class.   Columns can be from 1 to 12 columns wide.  Use the class `.col-*` where `*` is the size of the column to be created.  Breakpoint size classes are either `.large`, `.medium`, or `.small`.  They are explained further below.
+Columns must exist inside of a `.container` element.  To create a column, apply the class `.col` to an element, along with a column size class and a breakpoint size class.   Columns can be from 1 to 12 columns wide.  Use the class `.col-*` where `*` is the size of the column to be created.  Breakpoint size classes are either `.large`, `.medium`, or `.small`.  They are explained further below.  
+Containers will expand to the full width of the viewport (minus padding) on screens `767px` or smaller.  On screens larger than `767px`, the width of the container will expand to either `960px` or `80%` of the viewport, whichever is smaller.
 
 #####Example
 	<div class="container">
@@ -118,7 +119,7 @@ Quartz provides useful styles for most form elements including `input`, `textare
 	  <input class="form-input" type="text" placeholder="Form Input">
 	</div>
 	
-This same format will work for `select` elements, `input[type='checkbox']`, and `input[type='radio']`.
+This same format will work for `select`, `textarea`, `input[type='checkbox']`, and `input[type='radio']` elements.
 
 #####Example
 	<!-- Select Style Example -->
@@ -161,6 +162,15 @@ This same format will work for `select` elements, `input[type='checkbox']`, and 
 			This is value 3
 		</label>
 	  </div>
+	</div>
+	
+####Required Inputs
+Occasionally, you may have form inputs that are required.  Quartz provides a simple methods for denoting these types of required fields by adding the `.required` class to the `.form-row` element.  Required elements are denoted by a red asterisk next to the label.
+
+#####Example
+	<div class="form-row required">
+	  <label>Form Label</label>
+	  <input class="form-input" type="text" placeholder="Form Input">
 	</div>
 	
 
@@ -277,6 +287,10 @@ Unstyled lists requires the class `.list-unstyled` on the `ul` to be unstyled.
 For a paragraph level break in text, use the `hr` tag
 
 	<hr>
+	
+For links, use the `a` tag
+
+	<a href="#">This text is a link</a>
 
 To italicize text, use the `em` tag
 	
@@ -335,7 +349,7 @@ Utility Classes
 Quartz has some utility classes that can be applied to various elements to assist with basic customization.
 
 ###Alignment
-Elements can be aligned left, center or right by applying the `.align-left`, `.align-center` or `.align-right` classes respectively.
+Elements can be aligned left, center or right by applying the `.align-left`, `.align-center` or `.align-right` classes respectively.  The only caveat of using the `.align-center` class is that is forces your element to display as a block level element.
 
 Text can also be aligned left, center or right by applying the `.text-left`, `.text-center` or `.text-right` classes respectively.
 
