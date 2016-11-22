@@ -529,6 +529,7 @@ input[type="radio"] {
 .container {
   box-sizing: border-box;
   margin: 0 auto;
+  max-width: 960px;
   padding: 0 20px;
   position: relative;
   width: 100%; }
