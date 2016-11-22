@@ -398,6 +398,15 @@ p {
   margin-bottom: 10px;
   margin-top: 10px; }
 
+a {
+  color: #5cacc4;
+  text-decoration: none; }
+  a:focus, a:visited {
+    color: #5cacc4; }
+  a:hover {
+    color: #317489;
+    text-decoration: underline; }
+
 em {
   color: #ed473a; }
 

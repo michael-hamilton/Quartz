@@ -38,6 +38,21 @@ p {
 	margin-top: 10px;
 }
 
+a {
+	color: $link-color;
+	text-decoration: none;
+
+	&:focus,
+	&:visited {
+		color: $link-color;
+	}
+
+	&:hover {
+		color: darken($link-color, 20%);
+		text-decoration: underline;
+	}
+}
+
 em {
 	color: rgb(237, 71, 58);
 }
