@@ -512,11 +512,10 @@ input[type="radio"] {
 
 .container {
   box-sizing: border-box;
-  max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
-  width: 80%; }
+  width: 100%; }
 
 .row {
   margin-left: 10px;
