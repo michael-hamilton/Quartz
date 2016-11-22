@@ -454,7 +454,8 @@ label {
   display: inline-block;
   font-weight: 400;
   margin-bottom: 5px;
-  max-width: 100%; }
+  max-width: 100%;
+  padding-left: 10px; }
 
 .form-row {
   margin-bottom: 15px; }
@@ -498,6 +499,13 @@ label {
     color: gray; }
   .form-input:-ms-input-placeholder {
     color: gray; }
+
+textarea.form-input {
+  height: auto; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-left: -18px; }
 
 .checkbox label, .radio label {
   font-weight: 400; }
