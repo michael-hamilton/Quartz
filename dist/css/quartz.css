@@ -428,8 +428,10 @@ small {
   font-size: 75%; }
 
 hr {
+  border: 0;
   border-color: #f2f2f2;
-  border-width: 1px 0 0 0; }
+  border-top-width: 1px;
+  border-top-style: solid; }
 
 pre {
   background-color: #f2f2f2;
