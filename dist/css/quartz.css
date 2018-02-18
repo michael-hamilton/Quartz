@@ -534,6 +534,10 @@ input[type="radio"] {
   position: relative;
   width: 100%; }
 
+.container-full {
+  margin: 0 auto;
+  padding: 0 20px; }
+
 .row {
   margin-left: 10px;
   margin-right: 10px; }
