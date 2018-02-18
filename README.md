@@ -18,11 +18,11 @@ To install by cloning this repo
 git clone https://github.com/michael-hamilton/Quartz.git
 ```
 
-#Usage
+# Usage
 To use Quartz, simply link the quartz.css file in the `<head>` of your project.  Refer to the [documentation](https://github.com/michael-hamilton/Quartz/blob/master/docs/documentation.md) for more specifics
 
-#License
+# License
 Quartz is released under [the MIT license](https://github.com/michael-hamilton/Quartz/blob/master/LICENSE).  Have fun with it.
 
-#Acknowledgement
+# Acknowledgement
 Quartz is developed with love by [Michael Hamilton](https://github.com/michael-hamilton)
