@@ -15,13 +15,13 @@ A single row can contain up to 12 columns, including a mixture of different size
 Columns must exist inside of a `.container` element.  To create a column, apply the class `.col` to an element, along with a column size class and a breakpoint size class.   Columns can be from 1 to 12 columns wide.  Use the class `.col-*` where `*` is the size of the column to be created.  Breakpoint size classes are either `.large`, `.medium`, or `.small`.  They are explained further below.  
 Containers will expand to the full width of the viewport (minus padding) on screens `767px` or smaller.  On screens larger than `767px`, the width of the container will expand to either `960px` or `80%` of the viewport, whichever is smaller.
 
-#####Example
+##### Example
 	<div class="container">
       <div class="col medium col-6">
       </div>
     </div>
     
-###Breakpoints & Synonyms
+### Breakpoints & Synonyms
 Columns are responsive elements that are useful for laying out content differently on various devices.  There are 3 different types of columns that are set to stack at certain breakpoints.
 
 `.large` will cause columns to only display when the window width is `992px` or larger.  The `.desktop` class can be used as a synonym in place of `.large`.
@@ -30,10 +30,10 @@ Columns are responsive elements that are useful for laying out content different
 
 `.small` will cause columns to only display when the window width is smaller than `768px`.  The `.phone` class can be used as a synonym in place of `.small`.
 
-###Nesting
+### Nesting
 Columns can be nested within each other as well.
 
-#####Example
+##### Example
 	<div class="container">
       <div class="col medium col-6">
         <div class="col medium col-6">
@@ -41,10 +41,10 @@ Columns can be nested within each other as well.
       </div>
     </div>
     
-###Offsetting
+### Offsetting
 Columns can be offset by applying the `.offset-*` class where `*` is the number of columns (from 1 to 11) to offset.
 
-#####Example
+##### Example
 	<div class="container">
       <div class="col medium offset-1">
       </div>
@@ -56,10 +56,10 @@ __________
 Components
 ----------
 
-###Tables
+### Tables
 Quartz provides some basic styles for tables.  These styles directly effect the `<table>` element.  Alternatively, you can apply the `.table` class to any table element to take advantage of the same styles.  To properly pickup Quartz's styles, tables should be formatted as follows (using these basic table elements where applicable):
 
-#####Example
+##### Example
 	<table class="table">
 	  <thead>
 		<tr>
@@ -89,10 +89,10 @@ Quartz provides some basic styles for tables.  These styles directly effect the 
 Quartz also provides a few other styles for tables. For a striped table, use the `.table-stripe` class.  For a bordered table, use the `.table-bordered` class.  For a condensed table, use the `.table-small` class.  To highlight rows on hover, use `.table-hover`.  These classes can be used in conjunction with each other.
 
 
-###Buttons
+### Buttons
 To use a Quartz button, add the `.btn` class to an element.
 	
-#####Example
+##### Example
 	<button class="btn"></button>
 	
 You can use any of Quartz's contextual classes to apply meaningful colors to buttons.  To use a color class, apply the class `.btn-*` where `*` is the desired color of the button.  Options for classes include:
@@ -104,16 +104,16 @@ You can use any of Quartz's contextual classes to apply meaningful colors to but
 - `.btn-warn`
 - `.btn-error`
 
-#####Example
+##### Example
 	<button class="btn btn-default">This is a default button</button>
 
 Quartz also provides a few other styles for buttons.  For rounded buttons, use the `.rounded-corners` class.  Along with the default buttons sizes, you can create large or small buttons using the `.sm` and `.lg` classes, respectively.
 
 
-###Forms
+### Forms
 Quartz provides useful styles for most form elements including `input`, `textarea`, `select`, and `label`.  The easiest way to pickup Quartz's form styles is to wrap each form element and it's corresponding label in a `div` with the class `.form-row` as follows:
 
-#####Example
+##### Example
 	<div class="form-row">
 	  <label>Form Label</label>
 	  <input class="form-input" type="text" placeholder="Form Input">
@@ -121,7 +121,7 @@ Quartz provides useful styles for most form elements including `input`, `textare
 	
 This same format will work for `select`, `textarea`, `input[type='checkbox']`, and `input[type='radio']` elements.
 
-#####Example
+##### Example
 	<!-- Select Style Example -->
 	<div class="form-row">
 	  <label>Form Label</label>
@@ -164,20 +164,20 @@ This same format will work for `select`, `textarea`, `input[type='checkbox']`, a
 	  </div>
 	</div>
 	
-####Required Inputs
+#### Required Inputs
 Occasionally, you may have form inputs that are required.  Quartz provides a simple methods for denoting these types of required fields by adding the `.required` class to the `.form-row` element.  Required elements are denoted by a red asterisk next to the label.
 
-#####Example
+##### Example
 	<div class="form-row required">
 	  <label>Form Label</label>
 	  <input class="form-input" type="text" placeholder="Form Input">
 	</div>
 	
 
-###Alerts
+### Alerts
 Alerts are a useful way to display meaningful information.  Alerts work with all Quartz contextual classes to provide visual context to the element.  To use an alert, simply add the `.alert` class to an element as follows:
 
-#####Example
+##### Example
 	<div class="alert">Alert</div>
 
 To use a contextual color with an alert, apply the class `.alert-*` where `*` is the desired color of the alert.  Options for classes include:
@@ -188,7 +188,7 @@ To use a contextual color with an alert, apply the class `.alert-*` where `*` is
 - `.alert-warn`
 - `.alert-error`
 
-#####Example
+##### Example
 	<div class="alert alert-default">This is a default alert</button>
 	
 ____
@@ -199,10 +199,10 @@ Copy
 
 Quartz provides many global styles that are automatically applied, without the need for classes.  Elements used for copy all pickup Quartz's styling without the need for additional classes.
 
-###Headings
+### Headings
 Headings elements are styled by default. Simply use the standard HTML heading elements `h1`, `h2`, `h3`, `h4`, `h5`, `h6`.
 
-#####Example
+##### Example
 	<h1>Heading 1</h1>
     <h2>Heading 2</h2>
     <h3>Heading 3</h3>
@@ -212,13 +212,13 @@ Headings elements are styled by default. Simply use the standard HTML heading el
     
 Quartz includes styling for subheadings by using a `small` element inside of a heading element.
 
-#####Example
+##### Example
 	<h1>Heading 1 <small>Subheading</small></h1>
 	
-###Lists
+### Lists
 Basic list styling is included with Quartz.
 
-####Unordered Lists
+#### Unordered Lists
 	<ul>
 	  <li>Apples
 		<ul>
@@ -235,7 +235,7 @@ Basic list styling is included with Quartz.
 	  <li>Cranberries</li>
 	</ul>
 	
-####Ordered Lists
+#### Ordered Lists
 	<ol>
 	  <li>Dodge</li>
 	  <li>Ford
@@ -254,7 +254,7 @@ Basic list styling is included with Quartz.
 	  <li>GMC</li>
 	</ol>
 	
-####Unstyled Lists
+#### Unstyled Lists
 Unstyled lists requires the class `.list-unstyled` on the `ul` to be unstyled.
 
 	<ul class="list-unstyled">
@@ -273,7 +273,7 @@ Unstyled lists requires the class `.list-unstyled` on the `ul` to be unstyled.
 	  <li>Cranberries</li>
 	</ul>
 	
-####Description Lists
+#### Description Lists
 	<dl>
 	  <dt>Apple</dt>
 	  <dd>Red, round</dd>
@@ -283,7 +283,7 @@ Unstyled lists requires the class `.list-unstyled` on the `ul` to be unstyled.
 	  <dd>Dark red, round, small</dd>
     </dl>
 
-###Semantic Elements
+### Semantic Elements
 For a paragraph level break in text, use the `hr` tag
 
 	<hr>
@@ -348,10 +348,10 @@ Utility Classes
 
 Quartz has some utility classes that can be applied to various elements to assist with basic customization.
 
-###Alignment
+### Alignment
 Elements can be aligned left, center or right by applying the `.align-left`, `.align-center` or `.align-right` classes respectively.  The only caveat of using the `.align-center` class is that is forces your element to display as a block level element.
 
 Text can also be aligned left, center or right by applying the `.text-left`, `.text-center` or `.text-right` classes respectively.
 
-###Rounded corners
+### Rounded corners
 Most quartz components come with rounded corners.  If you would prefer to remove the rounded corners, you can apply the `.no-rounded-corners` class to your element.  Conversely, you can apply the `.rounded-corners` class to an element to give it rounded corners.  Buttons and alerts are great examples of components where these classes would be useful.
