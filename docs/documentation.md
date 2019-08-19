@@ -349,7 +349,7 @@ Utility Classes
 Quartz has some utility classes that can be applied to various elements to assist with basic customization.
 
 ### Alignment
-Elements can be aligned left, center or right by applying the `.align-left`, `.align-center` or `.align-right` classes respectively.  The only caveat of using the `.align-center` class is that is forces your element to display as a block level element.
+Elements can be aligned left, center or right by applying the `.align-left`, `.align-center` or `.align-right` classes respectively.  The only caveat of using the `.align-center` class is that it forces your element to display as a block level element.
 
 Text can also be aligned left, center or right by applying the `.text-left`, `.text-center` or `.text-right` classes respectively.
 
